@@ -1,0 +1,2179 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001B9C808ECEC22194E7FE31D1D68812 /* dist.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DFA1A7C4DB8FA3AE058E54C65625126 /* dist.h */; };
+		004E18E69DDFD9FA899B933EBECDDF4A /* stitching.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = FA85174A839E6A9ED97E6CC1C8877747 /* stitching.hpp */; };
+		0055C0B10881A1D0344C91F15F348B68 /* imgcodecs_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AFA8A25D4D6B89FFAF8D959128513BC /* imgcodecs_c.h */; };
+		008FB836232EA3AF54032419BC4F359B /* inpainting.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = 0C8B05D05B932E50136D7D17B7A65372 /* inpainting.hpp */; };
+		00B0B5ADCF54B974AEE97E755954F598 /* all_layers.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1565C670F07F2D6A0BEC028DF6CFCD91 /* all_layers.hpp */; };
+		00E199E48BCF27CB75B681241ECA5561 /* shape_transformer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1A12A9B53ADECD5CB8EDC9B90E8FE17B /* shape_transformer.hpp */; };
+		01552E86B8DCFEFB04870D0D81487D00 /* imgproc.hpp in Copy imgproc Public Headers */ = {isa = PBXBuildFile; fileRef = 6CEA482D64B545FC0637832B0401575E /* imgproc.hpp */; };
+		026551C38B43FFD62616065F8D7B1CE0 /* layer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26E6593A1311FF97CA839E66CB05C34F /* layer.hpp */; };
+		044F1FBEC6DE6A33B440DAC9937837AC /* fast_marching.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4570D8492A19F97A64949A7B24923885 /* fast_marching.hpp */; };
+		0538CD8246F72E5A955DDBB5637FA656 /* optical_flow.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = 8237164AD9D323C385404A6F56333402 /* optical_flow.hpp */; };
+		05AB9F8DA116BC39062C3CD55A1E9D48 /* saving.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 6CC883D5C06E705409265CAFBA75E741 /* saving.h */; };
+		06C7C95120AAC7AF823AF16FC4212077 /* video.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DC343A4FAE935BE1D69F93AEA79E3CAE /* video.hpp */; };
+		08211B48C1C9CC9AFE31F5464CE2D021 /* interface.h in Headers */ = {isa = PBXBuildFile; fileRef = 23AEFAF96527A939FC65CA7791C58DA0 /* interface.h */; };
+		08ABA3DA2972EB0A361F53AE23B3F6C8 /* logger.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 683DD6C0556675B532B22A38B4CC5108 /* logger.hpp */; };
+		0979EE3EE0E53B7F872A18C2D47165CB /* cuda.hpp in Copy photo Public Headers */ = {isa = PBXBuildFile; fileRef = 6589ECB95533AA8164E2AF3755BFF3B3 /* cuda.hpp */; };
+		0A5F9260349062128114FDC4D1C11C86 /* base.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 32FA881303C9C33E2FAE56DBA9687448 /* base.hpp */; };
+		0A83BB6372BC06A885ADACCCF420C266 /* calib3d_c.h in Copy calib3d Public Headers */ = {isa = PBXBuildFile; fileRef = 867FF5F57F51E3E76E03E782181E2616 /* calib3d_c.h */; };
+		0B09106F935703EEDBF8E65F7108C8F4 /* traits.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C0B14BA6E206FF25808730F7E52631C /* traits.hpp */; };
+		0B111E87CE9078CAEE0A17A5E3EE2808 /* lsh_index.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = BF1A767F0DCA82EDF4A7572C45072CBA /* lsh_index.h */; };
+		0C455281533A1261E103C8C34180B915 /* intrin_neon.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 29C2E58AEFA5DBF4BDA2780E46A95264 /* intrin_neon.hpp */; };
+		0CE89A12DD3BF060B634D303E972E8D3 /* ring_buffer.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = 156BE904DAF73C8833B70E1779B4B6AB /* ring_buffer.hpp */; };
+		0DAFD9F953C0448EB7A49D61965E4013 /* photo_c.h in Copy photo Public Headers */ = {isa = PBXBuildFile; fileRef = 35AFA6BFBD2D80A9268FC886234A7F5D /* photo_c.h */; };
+		0F6F0982A71A2135841117A5AFBE3883 /* deblurring.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D7641B3EB6F7781E444BBFFD65C9E4A2 /* deblurring.hpp */; };
+		0FEB8EE99B5F0DC81F5290287D1035AD /* types_c.h in Copy imgproc Public Headers */ = {isa = PBXBuildFile; fileRef = F209D65DA5F257E1D8898C06DD5FDA7B /* types_c.h */; };
+		116054E3A9267AF55B26781B245797D2 /* fast_math.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 481154E2F0A0FFC2730012A77F87E34F /* fast_math.hpp */; };
+		11852F91012C17B3E1267EA8D943A65F /* videoio.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CF0330CAC47B04F5F29655499961B34C /* videoio.hpp */; };
+		1203F06EAC9BC3B06385C60AF7CE0167 /* simplex_downhill.h in Headers */ = {isa = PBXBuildFile; fileRef = 00153BD01A493CD05C9F802F02C6C4D4 /* simplex_downhill.h */; };
+		12EC2390C8280C4D58AE2E4B60256ACE /* deblurring.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = D7641B3EB6F7781E444BBFFD65C9E4A2 /* deblurring.hpp */; };
+		13C201A4F5284DE9475F571ADE1A51C8 /* index_testing.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = B367DB339F7F608459B1F16BBB098637 /* index_testing.h */; };
+		1477E2CF5B011FE27E66649500A016B2 /* hal.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ED969DD4630CBFAF848B1872B9637008 /* hal.hpp */; };
+		14B66A08882AD2A4547232D819319DB3 /* motion_core.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = FA1F2F1864511AEEB0FFF51FD47D3393 /* motion_core.hpp */; };
+		15531599A8310BC102ED53D21A21700D /* imgcodecs.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 97DD2F3DCE30CC91C04D629B64DAF580 /* imgcodecs.hpp */; };
+		172658A10694CAF8BBD882A48AF8794A /* tracking_c.h in Copy video Public Headers */ = {isa = PBXBuildFile; fileRef = 720448E9CF76E680677ABF8E2D16310F /* tracking_c.h */; };
+		177AD9B41F561F5F38FF38F6FF1B23F5 /* stabilizer.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = CA63223D59DC3C750A9C1423A3E2ABC2 /* stabilizer.hpp */; };
+		18DB1AC3DA2ED3EFDF42ED89EFBD729C /* objdetect_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D65603661ABFCEF39FA4B746F3B842 /* objdetect_c.h */; };
+		19EEB4ADA3E1C6818ECB554AC8C35BE3 /* flann.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B432FE473546BA8B90BE9E3CC2CA3956 /* flann.hpp */; };
+		1A8D121F9CF455084AF0CED2FF9463BA /* util.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = CB5758ECB9A8CF961CA3677B2AB887DE /* util.hpp */; };
+		1B376AD0B29AE41208E2DE84610A4E90 /* ocl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F8B9DC1081308F7DEC6CA9A6594C21D3 /* ocl.hpp */; };
+		1BCB2632299FDDBA3C6C856C49921172 /* motion_stabilizing.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4AB7D107A9D4CA1C995C615C9F41C8A4 /* motion_stabilizing.hpp */; };
+		1BF490B18C38936B7EEB132EF62E0529 /* timer.h in Headers */ = {isa = PBXBuildFile; fileRef = E46A1AF06C54A0D7118B3C5707AB2FBC /* timer.h */; };
+		1C2C333888B6A5F2F030B221F9BCA48E /* cvstd.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 88ABCED2D1AB22526C8F89C581DC6F56 /* cvstd.hpp */; };
+		1F1E40E1D0B208E4269C0A24F01CA764 /* object_factory.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C39F202BC20B8EC680B5E405160C378 /* object_factory.h */; };
+		1FF0CAFB039C94D2F009ED9AE0EBC775 /* ocl_genbase.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 1F57EC9D072477B9E4783E54AE44DA47 /* ocl_genbase.hpp */; };
+		20CAB5FA814E93547894A3D01DA468A0 /* global_motion.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = 65A1D062376E88BE0CABE631F79E895A /* global_motion.hpp */; };
+		20E27A293A9F50171100728334D34358 /* types_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F86E993E8A62A8366DCB64333DBFE44 /* types_c.h */; };
+		24985A8A822E3D3428C836ACA4033FFA /* defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 0407E843D1C45F446C19C53A3DD43275 /* defines.h */; };
+		2578074ABC7AE557270F9BFF77028870 /* warpers_inl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4EE11714D5531BC61D4F060E638DFCCA /* warpers_inl.hpp */; };
+		27947A6675D42711698B43E4B14737A6 /* flann.hpp in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = B432FE473546BA8B90BE9E3CC2CA3956 /* flann.hpp */; };
+		27FF6E5D9733BEF5DA9809EBBB8543EF /* cv_cpu_helper.h in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 73C9BAF243CCAF975AE33D42563C9C42 /* cv_cpu_helper.h */; };
+		28C444016CD53858D3F1C21FA8FC64FA /* ios.h in Copy imgcodecs Public Headers */ = {isa = PBXBuildFile; fileRef = 90238294BCF2C6461A505AC24B4CD6FA /* ios.h */; };
+		28E9916EED58DAFE9DCD90D23647B8F1 /* cap_ios.h in Copy videoio Public Headers */ = {isa = PBXBuildFile; fileRef = 76FDD74659D5B34665FE76FBAB01518F /* cap_ios.h */; };
+		29E9C5A671B5391E5E2988478B684048 /* kmeans_index.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 33D959246AF429B191CA1EB1972FAF7D /* kmeans_index.h */; };
+		2B9E4D5B057D289F549A5E5917153C3F /* result_set.h in Headers */ = {isa = PBXBuildFile; fileRef = F737742F904C18B79D7558A87F1731E8 /* result_set.h */; };
+		2BAD7BC4B5E84E68DE08581C0A57A83C /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A111D97DE89DD80C5090965054AEFCA /* Empty.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2BDEE3F02F2D87238A12BB4433F8D152 /* dnn.inl.hpp in Copy dnn Public Headers */ = {isa = PBXBuildFile; fileRef = 2BDD7A4937D81D1F96E97EBE70D3B920 /* dnn.inl.hpp */; };
+		2BF9004F7FD4CCD7274569B8859486E8 /* cuda_types.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 8353EB9101AF9E0D0AAF6D09945DFCAC /* cuda_types.hpp */; };
+		2C109376582F2D51BBAACE2C2282A6FD /* ovx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6CC8FF4791442A1A344B73E5BE124DEF /* ovx.hpp */; };
+		2CFFDFC2C44D8CFE632A4AA58D0A897C /* ippasync.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = A10C1FFD1E57EDD3E3758494E73C3293 /* ippasync.hpp */; };
+		2E043FF88F5392452D3356F49F716DEE /* cvstd.inl.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 50745D14EBA76C180D1CD7B4A535E7F9 /* cvstd.inl.hpp */; };
+		2EB5B4BF0236907FE6A183AFC34D62AE /* objdetect.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3A6ACA45A9A9ADDBC4D1BC0503809139 /* objdetect.hpp */; };
+		2F73F7732DDE3B53EEC163CDA4DE79C8 /* interface.h in Copy imgproc/hal Public Headers */ = {isa = PBXBuildFile; fileRef = 23AEFAF96527A939FC65CA7791C58DA0 /* interface.h */; };
+		30BEC8B59FEF82D418596449553FF4C3 /* autotuned_index.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E5A202E27F8FA09DEE0D239FE64E8B5 /* autotuned_index.h */; };
+		318E5FA596770104E5E4D09479DFD251 /* nn_index.h in Headers */ = {isa = PBXBuildFile; fileRef = 325183DE4B163E0C61D3EBD64C1D0132 /* nn_index.h */; };
+		31A6C1612DE62E675F82DF5839EED611 /* photo_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 35AFA6BFBD2D80A9268FC886234A7F5D /* photo_c.h */; };
+		322F077F8C8D7AFAB2851B2DA8B05E23 /* composite_index.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 98080A3D1BBB6745D1EF920CE6BE3627 /* composite_index.h */; };
+		329EA4D289124EEF82BAD275AFC04DD4 /* photo.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B6352210733819FCE235B59BA3020A8E /* photo.hpp */; };
+		32A01DFE5D20C281482098E174F25A92 /* optim.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = B2A6417A482EA42B83B0B7DAC168BFA3 /* optim.hpp */; };
+		33513B79B6CCA3472B5CCBDA8D028254 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12A0C580F61D0DBAF412440D49546F5 /* AVFoundation.framework */; };
+		33C13F4FC4239775AD1519B5EF376B0E /* neon_utils.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = F7597CED489F426D8FA2C7E457921134 /* neon_utils.hpp */; };
+		343B43E817C0A99284897256290BC1E5 /* ground_truth.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 703CD599CAE11725FC8E6F0E45C2C436 /* ground_truth.h */; };
+		34543049075BBCF88707D925B2BC8609 /* allocator.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = CF58C86B8C79665FA952EB16B8A08161 /* allocator.h */; };
+		347C19B4E7B18E14E3A495F31A730E4D /* cv_cpu_dispatch.h in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = AB5E87C7AAEA08473A1DCF72AA73FDE7 /* cv_cpu_dispatch.h */; };
+		34C10433226C9B86C6156FB52E48F44C /* cvconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 8505CFC760072458958F7255829F5380 /* cvconfig.h */; };
+		350DBEC4730A28ED1DC551C289C6DF21 /* motion_core.hpp in Headers */ = {isa = PBXBuildFile; fileRef = FA1F2F1864511AEEB0FFF51FD47D3393 /* motion_core.hpp */; };
+		35A76222D41314FC6FB91C5D3203F3A6 /* flann.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F561F56AE5AC3179BB7C587606269393 /* flann.hpp */; };
+		35B58E8E927B35EB957DA738669AACE3 /* intrin.hpp in Copy core/hal Public Headers */ = {isa = PBXBuildFile; fileRef = 48CE466025D0ABFAB6A49AAB67C6B38E /* intrin.hpp */; };
+		3666127B0AB29FDC48D3E1F2764E6784 /* Pods-FacifyUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E2473063C1598270687DDF4E096B0AC /* Pods-FacifyUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36A3DCDBF95F255024AE1B31BF22ABE0 /* blenders.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = 0771713B6F6845906E3D5E0F450630E9 /* blenders.hpp */; };
+		36BB461BCD95DF2E60C14EEE3D01DA41 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = B2F6C3EA1CB82D55B61BBE83BD95837F /* config.h */; };
+		37908094E89AD764D2B0FC55E208AE20 /* exposure_compensate.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8EF3E15B39129EFB32C2C17B9C4EAD79 /* exposure_compensate.hpp */; };
+		37CF2877372F50355F2A5219D42084CD /* frame_source.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1FC6264343C826E14FCEBB29691D8FEB /* frame_source.hpp */; };
+		37DF6AC31DA274956D200BF16031C451 /* util.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CB5758ECB9A8CF961CA3677B2AB887DE /* util.hpp */; };
+		38A30E7EC59D8A57BB895BC9A33A9669 /* matx.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 332A8717A2DD102D64AD59DF0267A27C /* matx.hpp */; };
+		38CC119823BCD0FA22A763131C37AEC9 /* world.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 720D78F50BF4DF189F4F92E7B41CC3D1 /* world.hpp */; };
+		3BD8BA02700D32C081F58DEB47031F4F /* affine.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2DFBA73B4C9AA223348A81CFB4294DF5 /* affine.hpp */; };
+		3CCDC1975A76A845EDA74840F7F9121C /* outlier_rejection.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = AC72FD6C46D320CD0FDDC9E0D03EC90C /* outlier_rejection.hpp */; };
+		3FF33709EBD8A22D483B2ED93B792F2D /* util_inl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BD4A22B39A067ADC807E88DD716A724D /* util_inl.hpp */; };
+		4056653D426DBCC869D5263766D34E16 /* dummy.h in Headers */ = {isa = PBXBuildFile; fileRef = 0859373D08607471A542ED487D10E7A5 /* dummy.h */; };
+		416FA926434C1E47B6FF907E8249420D /* autocalib.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8D0F952886D152FC8FF6D6F99718811E /* autocalib.hpp */; };
+		421C485580DF82AA5E18320D401DFF35 /* types.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8E50E1908F7F569B61A6544AEB042E25 /* types.hpp */; };
+		426BEF9419CDF6A762038ABB81979E60 /* result_set.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = F737742F904C18B79D7558A87F1731E8 /* result_set.h */; };
+		4312FDC2296A2FC1FA95318538043F5B /* emdL1.hpp in Copy shape Public Headers */ = {isa = PBXBuildFile; fileRef = C2D21593708345A47CCF81A21436742A /* emdL1.hpp */; };
+		444914B6F7781B6A6438DB5B1B96F279 /* stitching.hpp in Headers */ = {isa = PBXBuildFile; fileRef = FA85174A839E6A9ED97E6CC1C8877747 /* stitching.hpp */; };
+		446553E1F7D776987C183722B275C9DD /* flann_base.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8AA6C969AFAD10CFA416AF0BFA212F2A /* flann_base.hpp */; };
+		4536F8D7C741E68E227423110F856F29 /* kmeans_index.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D959246AF429B191CA1EB1972FAF7D /* kmeans_index.h */; };
+		4630CE411A6ACFB1ABFEAD12305262A5 /* cuda_stream_accessor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B8779C2E016A033226E21F7041EB6245 /* cuda_stream_accessor.hpp */; };
+		469D1927279357F01360C0002D96959D /* calib3d.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 8FFC37E2D62785CC4938F62000F4D275 /* calib3d.hpp */; };
+		478E898C82E3687A422958C92557DBE5 /* videoio_c.h in Copy videoio Public Headers */ = {isa = PBXBuildFile; fileRef = A5CAAA081028C4D8E7D48924927316D1 /* videoio_c.h */; };
+		48588E486EAD85371398BABEA3A22739 /* video.hpp in Copy video Public Headers */ = {isa = PBXBuildFile; fileRef = DC343A4FAE935BE1D69F93AEA79E3CAE /* video.hpp */; };
+		4860C197DA41814CD908E90601120CD1 /* types_c.h in Headers */ = {isa = PBXBuildFile; fileRef = F209D65DA5F257E1D8898C06DD5FDA7B /* types_c.h */; };
+		4873E1423B5A9FB3D0A89AAE1299A9A4 /* photo.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = B6352210733819FCE235B59BA3020A8E /* photo.hpp */; };
+		4876B45B8492A0046F6D359AA562FBFA /* fast_marching_inl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0A52D391C9C2E75FA749FC5AE8150565 /* fast_marching_inl.hpp */; };
+		498484DFFF09D46E47201D2CB7324AF2 /* videoio_c.h in Headers */ = {isa = PBXBuildFile; fileRef = A5CAAA081028C4D8E7D48924927316D1 /* videoio_c.h */; };
+		49E90DFCCB3770DAB1DA20E3F4D7A14A /* background_segm.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F9E5154CEAFC91AED7858C793EF77F2B /* background_segm.hpp */; };
+		4B4B3461FF4128D18AAE57FDA6165BA6 /* sse_utils.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 922B6F1E606E72734AC156E46195D08E /* sse_utils.hpp */; };
+		4BCD5D8169E112B2F35B26D4B46D1393 /* warpers.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 99E9D84F4DD61226502E7F72214C6FE1 /* warpers.hpp */; };
+		4D60F03352DF3C7FC4EEBCCAE0CA5B49 /* background_segm.hpp in Copy video Public Headers */ = {isa = PBXBuildFile; fileRef = F9E5154CEAFC91AED7858C793EF77F2B /* background_segm.hpp */; };
+		4DEE108B123376BC029A0FA3005BE590 /* any.h in Headers */ = {isa = PBXBuildFile; fileRef = 2671D608A7C9BE40F1D3BA70D8F98FF0 /* any.h */; };
+		4E384CCB8F89D9CE6B382BC84AFA395E /* warpers.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1EE9095B956C60303AF18517346F0883 /* warpers.hpp */; };
+		4E977CB89F8FB447140F8A5E4B73BA95 /* params.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 305C8DDE61FAAEAFD744D9AB671335A0 /* params.h */; };
+		4F2BAE99D12AF0906C85B47EB6A68517 /* ml.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 409C44F696CA9E02DA3B77AD394E58DC /* ml.hpp */; };
+		5068B87CBE4460E786D8250B1874D793 /* camera.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = 374ED351167FB8A155AD22138F2BA76E /* camera.hpp */; };
+		5075D5762AF502C139161FA88D86E585 /* cv_cpu_dispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5E87C7AAEA08473A1DCF72AA73FDE7 /* cv_cpu_dispatch.h */; };
+		528CFB2F971E5BB4F71317B57E139A60 /* wimage.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 59CDB86CEB55CD576A5F3DB3F9BC0DD6 /* wimage.hpp */; };
+		52D7D90A8384014305B0D6658E10B03E /* OpenCV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70A0CAC174D7237B691B146124214325 /* OpenCV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5306CA34929100E64E261933633172C6 /* optim.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B2A6417A482EA42B83B0B7DAC168BFA3 /* optim.hpp */; };
+		53266A2B627E8285AAE2D01030013874 /* heap.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BF6874BA2056E6AA372421896045F61 /* heap.h */; };
+		53E059EAB799C9C170C6757B19E82F12 /* wimage.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 59CDB86CEB55CD576A5F3DB3F9BC0DD6 /* wimage.hpp */; };
+		5419FDC6A44DF675C0C2EDF0C5FCAF8B /* ovx.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 6CC8FF4791442A1A344B73E5BE124DEF /* ovx.hpp */; };
+		54A43138D106A909752FFA6D1DE29B5E /* sampling.h in Headers */ = {isa = PBXBuildFile; fileRef = D550015E78920A6A971514C4A8B311DA /* sampling.h */; };
+		54A7CA4F988D7918ABAC5AA4916698F4 /* persistence.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 23D3FECCE939C34E1A3340B385A4A926 /* persistence.hpp */; };
+		556207726F98DCDD313248B534A4C44C /* motion_estimators.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 14E98BE8EA60837754FCEC75C0FFE9CF /* motion_estimators.hpp */; };
+		5584D4CD0DB9B66261B01466CA9748B2 /* bufferpool.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 87301CC5C0CF7E469BB4D05AF2C01B4A /* bufferpool.hpp */; };
+		578E2C1F9431E49D1C267181F57F3446 /* intrin_vsx.hpp in Copy core/hal Public Headers */ = {isa = PBXBuildFile; fileRef = 32AE690BFB5528CD1E5AF2C32260A57C /* intrin_vsx.hpp */; };
+		57C7DF95024CDF0276C392B1ACB754FB /* sse_utils.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 922B6F1E606E72734AC156E46195D08E /* sse_utils.hpp */; };
+		57DA2B394B010B143537FC3E851A08B2 /* matrix.h in Headers */ = {isa = PBXBuildFile; fileRef = FFECAB882AAE8514EEA102A5A32B314E /* matrix.h */; };
+		585A12447573829F28C6A25AAC97930F /* hal.hpp in Copy core/hal Public Headers */ = {isa = PBXBuildFile; fileRef = ED969DD4630CBFAF848B1872B9637008 /* hal.hpp */; };
+		58E603BCF68932FC059FF721E04FD743 /* dist.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 7DFA1A7C4DB8FA3AE058E54C65625126 /* dist.h */; };
+		5958883C5DECA8E0289FEBAECED4D51B /* distortion_model.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 429888072B4066A7EA929A18D9E8D6A8 /* distortion_model.hpp */; };
+		5C04E4ED9AB3067E224D33A66EF5B458 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF860C0D2C249A26680274522438B89 /* Foundation.framework */; };
+		5C228388DDED83E5F82E2E336AC43630 /* linear_index.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = F6EEDDEB455AC967C909282FE2E30FFB /* linear_index.h */; };
+		5C844E0EB3E2A236B3FCE49E29F40FAC /* ml.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6E36E3B7A75CE2022E27A2B0A8D1F3B6 /* ml.hpp */; };
+		5C8DC434D7CC840A8412B8420246751D /* shape.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 5DB4E1E9EB47115F0DEC5373EA6F0DEE /* shape.hpp */; };
+		5D98B22F57A77146239000EB42308F0D /* photo.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4016296190271E771C149B3FAFAB64D7 /* photo.hpp */; };
+		5E0B55E258C6FF45A66171E369F2828D /* calib3d_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 867FF5F57F51E3E76E03E782181E2616 /* calib3d_c.h */; };
+		6055B515ED54AF09542A9917D442129B /* imgcodecs.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 97DD2F3DCE30CC91C04D629B64DAF580 /* imgcodecs.hpp */; };
+		60FD4C3F5A9CF93D0B50441C9414DFBB /* mat.inl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8176B8B471027706B747A92722B5F59E /* mat.inl.hpp */; };
+		615365A02F378D7CC749B23A5615FB48 /* eigen.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CC28814307FC8C87AE9CE88FA3EAE30D /* eigen.hpp */; };
+		61D5FC6F4DF94278045F1D1F6303C1D8 /* saving.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CC883D5C06E705409265CAFBA75E741 /* saving.h */; };
+		6247E9A25F4F8BC377BFE8F02E2BA34D /* config.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = B2F6C3EA1CB82D55B61BBE83BD95837F /* config.h */; };
+		6272A8C67EF13240622AAE3A6B34A095 /* outlier_rejection.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AC72FD6C46D320CD0FDDC9E0D03EC90C /* outlier_rejection.hpp */; };
+		634BE35E6E26E153538C27A8AE5665D0 /* OpenCV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 15893F00011E1950D8EFB806AF8AD028 /* OpenCV-dummy.m */; };
+		6386BCB57A6D4417CECE0441A48F892D /* hist_cost.hpp in Copy shape Public Headers */ = {isa = PBXBuildFile; fileRef = 7646910B15BA22998EF72EF23A24C38C /* hist_cost.hpp */; };
+		63C071B40456CC1D204FD6D509525B80 /* object_factory.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 4C39F202BC20B8EC680B5E405160C378 /* object_factory.h */; };
+		65C7BAED8E070CF56B52CAA1AA00E9F0 /* shape_distance.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 83C7111B814FBD8806DCCD113BD146B0 /* shape_distance.hpp */; };
+		6652AAD553F042843CD6E288C585D53F /* version.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 30D36D69EAFE0AA97A210934FD863E2E /* version.hpp */; };
+		672CE2A4273EDEEDDCE1A970DF7956B8 /* hal.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4650E81B041C7162D8FE1235845378D7 /* hal.hpp */; };
+		68AFEEEDC35A188B286A806FB486A665 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B629C7ADACF32702361E012B7E3071 /* UIKit.framework */; };
+		6B0A76209F85D0B816C68EC2ADA3E802 /* opengl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 7AF00972376E49412E603767033C98AA /* opengl.hpp */; };
+		6C3B1EA33B89B35526DA077DBE5F85BC /* general.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = EB3AA50C556C9AAB506801182D8769A1 /* general.h */; };
+		6C933238104EC19DB93F8927DC2C702E /* kdtree_single_index.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AB2357831BB005B7B0AB6DF2168EA42 /* kdtree_single_index.h */; };
+		6CEE1E19C8EEEAFC946B36122BAA7E45 /* cvdef.h in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 5052B2E2DC3B1F17679067EC6DFBBA10 /* cvdef.h */; };
+		6DB8F899D9AFBC02883B525FEB532C8A /* shape_utils.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F82CF1D4F752EFE7AABEDB39BCB97FA4 /* shape_utils.hpp */; };
+		6DBE856F13EF6EC9899E6643EC6D36C5 /* general.h in Headers */ = {isa = PBXBuildFile; fileRef = EB3AA50C556C9AAB506801182D8769A1 /* general.h */; };
+		6E470DFAA8C0881B0914D576712E7455 /* va_intel.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 67761ECF24C0EA16F22023346081A84C /* va_intel.hpp */; };
+		6EE7EDB822EFE3AF0CBB821A195659AC /* world.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 720D78F50BF4DF189F4F92E7B41CC3D1 /* world.hpp */; };
+		6F0EBF49987407BD5479AD0580F7FDA5 /* all_layers.hpp in Copy dnn Public Headers */ = {isa = PBXBuildFile; fileRef = 1565C670F07F2D6A0BEC028DF6CFCD91 /* all_layers.hpp */; };
+		6F90C43862DB5AB5DB506124C95AE4E7 /* cuda.inl.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = D4483426E2FE45A5D6A85557836B6120 /* cuda.inl.hpp */; };
+		6FF4083DA1DD7867AD92DEC72C31735D /* hist_cost.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 7646910B15BA22998EF72EF23A24C38C /* hist_cost.hpp */; };
+		7034DADE3EF9C962994208809323EE20 /* ring_buffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 156BE904DAF73C8833B70E1779B4B6AB /* ring_buffer.hpp */; };
+		70980A657C7274B02D1C5C1299475B76 /* highgui.hpp in Copy highgui Public Headers */ = {isa = PBXBuildFile; fileRef = 69A156916273A9A425D4714BD42C1802 /* highgui.hpp */; };
+		713433B9FE9621D89379DF6EB9E24132 /* core.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 629FCCAAF294DEAEF91836EB614CC595 /* core.hpp */; };
+		726D21284DCC1C33535C3AA5194CE704 /* trace.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 62C73826C593FBE6281B12F29A8C0EFB /* trace.hpp */; };
+		72AD870125917EAA1B8D0BE7A0831959 /* imgcodecs.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B579E1FC3B47AA1FB6D5046F3F5EE8E2 /* imgcodecs.hpp */; };
+		73B4F6BBD0C651645FC39F7B53399DE6 /* warpers_inl.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = 4EE11714D5531BC61D4F060E638DFCCA /* warpers_inl.hpp */; };
+		73C5889DA3B98DAEDBCC57DDA2777C78 /* tracking.hpp in Copy video Public Headers */ = {isa = PBXBuildFile; fileRef = F97685D7BB1ED1ABC2B4902E3B7B219A /* tracking.hpp */; };
+		73F5EEEF9BDDD5BD3C8E2271903CD560 /* kdtree_single_index.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 5AB2357831BB005B7B0AB6DF2168EA42 /* kdtree_single_index.h */; };
+		7414A7C81DB0300F41F654B1007FF564 /* frame_source.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = 1FC6264343C826E14FCEBB29691D8FEB /* frame_source.hpp */; };
+		74920D71BFD05D61D732E0B0BB1A01A8 /* va_intel.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 67761ECF24C0EA16F22023346081A84C /* va_intel.hpp */; };
+		74CCE2A5F67CC1F6B9FA0279F07157AA /* warpers.hpp in Copy stitching Public Headers */ = {isa = PBXBuildFile; fileRef = 99E9D84F4DD61226502E7F72214C6FE1 /* warpers.hpp */; };
+		755E4524E8F1D99278C177CA5342BEAB /* hal.hpp in Copy imgproc/hal Public Headers */ = {isa = PBXBuildFile; fileRef = 4650E81B041C7162D8FE1235845378D7 /* hal.hpp */; };
+		75CC634A2BD90B81C4AAC41890DA2AA8 /* inpainting.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0C8B05D05B932E50136D7D17B7A65372 /* inpainting.hpp */; };
+		76F49BFF33D4329B31F63975F28D4B66 /* intrin_vsx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 32AE690BFB5528CD1E5AF2C32260A57C /* intrin_vsx.hpp */; };
+		77B862844F82091CB1D3044DF154BE3E /* cuda.inl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D4483426E2FE45A5D6A85557836B6120 /* cuda.inl.hpp */; };
+		796B2DD905232AF30695C7ACA6134F58 /* cap_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 76FDD74659D5B34665FE76FBAB01518F /* cap_ios.h */; };
+		7A6226062304407FE490F8794C86F4E8 /* kdtree_index.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 81C7416700E2C74C4832A064C3EB6941 /* kdtree_index.h */; };
+		7CE9731D7C30C1A92DA6276B056B4255 /* index_testing.h in Headers */ = {isa = PBXBuildFile; fileRef = B367DB339F7F608459B1F16BBB098637 /* index_testing.h */; };
+		7D075DFF94311374A840F1EB22397020 /* any.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 2671D608A7C9BE40F1D3BA70D8F98FF0 /* any.h */; };
+		7E2F556331F7B4E248FFEC8449BBAF0D /* ippasync.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A10C1FFD1E57EDD3E3758494E73C3293 /* ippasync.hpp */; };
+		7F70F3B0D1F345F62F9072BEC4B2A98E /* timelapsers.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = D7BF5738B9AE82F31FCA704F75DC88EA /* timelapsers.hpp */; };
+		7F7811EF92578456C1ECB0C5112B261B /* Pods-FacifyTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B3679913C94030205132CD62164324 /* Pods-FacifyTests-dummy.m */; };
+		81B3CA84D10640DB33C5497622ACF332 /* ocl.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = F8B9DC1081308F7DEC6CA9A6594C21D3 /* ocl.hpp */; };
+		83CF4644487F3FA376D1A9B69022D787 /* detection_based_tracker.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1A87B2363D744A6CABA0ED5AF74CC4C7 /* detection_based_tracker.hpp */; };
+		83F6CC6E98B2E86AD8C5150E5CEFCA40 /* matchers.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BA5D8548A07AAAFD07194AF78C72F675 /* matchers.hpp */; };
+		8500F80473F545AC556FF08115443D08 /* hierarchical_clustering_index.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 42D40E2E371E1F8437F6E3FF5A9AC4C4 /* hierarchical_clustering_index.h */; };
+		8536DBF616326A693CED57D2F75EF8FD /* shape.hpp in Headers */ = {isa = PBXBuildFile; fileRef = FBB698D673245663222C554057FE1AD2 /* shape.hpp */; };
+		8753D263876CE0BD708AAD0A3A927A3B /* seam_finders.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = 3733400897AEC0995BBD56EE53E7BDA2 /* seam_finders.hpp */; };
+		885E4912E3731FB369B68B7A1E81CA34 /* highgui_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 731FF8AE65F441A87D8A572FFF2E31BE /* highgui_c.h */; };
+		89268AC900A26251800497F9D5D8EBBA /* matrix.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = FFECAB882AAE8514EEA102A5A32B314E /* matrix.h */; };
+		8A3484D16B02FFBBFC6FA1CC00FE0C5A /* core.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 629FCCAAF294DEAEF91836EB614CC595 /* core.hpp */; };
+		8B496CB8A30511B6339109B1129E3215 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D56CEB452F703D306ED5BE80CEF641 /* CoreGraphics.framework */; };
+		8B5E887A1A687BE18E01777A95EFF6EF /* matchers.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = BA5D8548A07AAAFD07194AF78C72F675 /* matchers.hpp */; };
+		8C1677D5755E84C13983B540CA6994F7 /* imgcodecs.hpp in Copy imgcodecs Public Headers */ = {isa = PBXBuildFile; fileRef = B579E1FC3B47AA1FB6D5046F3F5EE8E2 /* imgcodecs.hpp */; };
+		8CB06B9132E63B52B70F1CBA77E0D97B /* logger.h in Headers */ = {isa = PBXBuildFile; fileRef = C313E6B7AB5B2E8B8057D4652BC46B8B /* logger.h */; };
+		8D83438E8FF180D732CA5268DD228692 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF860C0D2C249A26680274522438B89 /* Foundation.framework */; };
+		8DAC5519FFB025D01D8625611BBA86D8 /* exposure_compensate.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = 8EF3E15B39129EFB32C2C17B9C4EAD79 /* exposure_compensate.hpp */; };
+		8F6B442EEFFB148EC47FDD7E539860C8 /* opencv.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = EA5204F028B67A1D7E6B24DC312A7811 /* opencv.hpp */; };
+		9038445BDA1BBEB8C61A0279907E7598 /* timelapsers.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D7BF5738B9AE82F31FCA704F75DC88EA /* timelapsers.hpp */; };
+		9053F98D529C9602E39ECBDF09003643 /* opencv_modules.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 433ADE9A2A3400D190C3F873FE98DC63 /* opencv_modules.hpp */; };
+		91C54DD5514849A0816AA704BAEC97D7 /* shape_distance.hpp in Copy shape Public Headers */ = {isa = PBXBuildFile; fileRef = 83C7111B814FBD8806DCCD113BD146B0 /* shape_distance.hpp */; };
+		929EA0A2116DE1E6D4D08E22A740E440 /* traits.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 2C0B14BA6E206FF25808730F7E52631C /* traits.hpp */; };
+		93622E192081B43BEF053F8C1732EACD /* highgui_c.h in Copy highgui Public Headers */ = {isa = PBXBuildFile; fileRef = 731FF8AE65F441A87D8A572FFF2E31BE /* highgui_c.h */; };
+		941137242988ACE90202525FBE7D830A /* seam_finders.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3733400897AEC0995BBD56EE53E7BDA2 /* seam_finders.hpp */; };
+		948A669D39F1AB45CC4066CC196A5411 /* wobble_suppression.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = 990EA3B5B57C270CC819F1D0CD8B0956 /* wobble_suppression.hpp */; };
+		94C776EBB1B5170373BB0E80C5B72786 /* imgcodecs_c.h in Copy imgcodecs Public Headers */ = {isa = PBXBuildFile; fileRef = 4AFA8A25D4D6B89FFAF8D959128513BC /* imgcodecs_c.h */; };
+		94E51F23F34473A09BAC1A576C57A574 /* dummy.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 0859373D08607471A542ED487D10E7A5 /* dummy.h */; };
+		952625E0394DC94B29E23AA47B8BBD47 /* tracking.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F97685D7BB1ED1ABC2B4902E3B7B219A /* tracking.hpp */; };
+		956889EC416AFABCB271C584F76828BA /* softfloat.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = F2C229D76D8B8A364962CF459A229757 /* softfloat.hpp */; };
+		9693864D8B3DD17CA9D677251ECAC3A1 /* videostab.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 9F238DA5435302695250D8412A16C7C7 /* videostab.hpp */; };
+		96D705DAFE32ED6BC91CB09FA10897DB /* lsh_index.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1A767F0DCA82EDF4A7572C45072CBA /* lsh_index.h */; };
+		9745E5F25145F66E63F2B240B3AAB362 /* shape_utils.hpp in Copy dnn Public Headers */ = {isa = PBXBuildFile; fileRef = F82CF1D4F752EFE7AABEDB39BCB97FA4 /* shape_utils.hpp */; };
+		976A2AE3699A5EEDE840A4F426BE93E5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03263BB27219DC2EA2E3B17D42AD439F /* CoreMedia.framework */; };
+		97D83F102F09D14A08BE2332776181C6 /* videoio.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8295C724CC26EC53BF6505794CC0D3E2 /* videoio.hpp */; };
+		985936692699D4EA53FDE2DEBEC464BA /* cuda.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 976BE07193CA088BA55350660994D980 /* cuda.hpp */; };
+		98B10FC827B91B7D9941E68C8B1AE2F5 /* logger.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = C313E6B7AB5B2E8B8057D4652BC46B8B /* logger.h */; };
+		98CC3CC85CEEAF1661088FC98E42CF88 /* allocator.h in Headers */ = {isa = PBXBuildFile; fileRef = CF58C86B8C79665FA952EB16B8A08161 /* allocator.h */; };
+		9948D13CA2A86FE1A74525DC80A6D043 /* imgproc.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6CEA482D64B545FC0637832B0401575E /* imgproc.hpp */; };
+		997D83C61373CC5A44200F9AB909259D /* opengl.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 7AF00972376E49412E603767033C98AA /* opengl.hpp */; };
+		9A9AA1F8936C734FE58337A9E0CA3A35 /* fast_marching_inl.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = 0A52D391C9C2E75FA749FC5AE8150565 /* fast_marching_inl.hpp */; };
+		9AA62613C34B189CF133B316953B10EB /* objdetect_c.h in Copy objdetect Public Headers */ = {isa = PBXBuildFile; fileRef = 20D65603661ABFCEF39FA4B746F3B842 /* objdetect_c.h */; };
+		9B75B474D637EAC12AFC9DEF84E80DFA /* simplex_downhill.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 00153BD01A493CD05C9F802F02C6C4D4 /* simplex_downhill.h */; };
+		9C1651CCE98932903958A995885822BE /* motion_estimators.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = 14E98BE8EA60837754FCEC75C0FFE9CF /* motion_estimators.hpp */; };
+		9C3974B6268CBD8A055790769715789D /* intrin_sse.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 19C84CCD2B3FEC1BDD754418790C6F50 /* intrin_sse.hpp */; };
+		9C7B3F28BBF7B53D62D4611FB0B1B266 /* sampling.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = D550015E78920A6A971514C4A8B311DA /* sampling.h */; };
+		9D28C394EC683CB2FB49DE16D5072A56 /* mat.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 53FC8245D9FA69029E256F00BCC9E169 /* mat.hpp */; };
+		9D7E5D6DD3648D242C1F56BBED39D928 /* blenders.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0771713B6F6845906E3D5E0F450630E9 /* blenders.hpp */; };
+		9D85CCE3A9390FD0486B61DE86E38239 /* ocl_genbase.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1F57EC9D072477B9E4783E54AE44DA47 /* ocl_genbase.hpp */; };
+		9ED86ED4191827280979E7D5A56E90E9 /* videoio.hpp in Copy videoio Public Headers */ = {isa = PBXBuildFile; fileRef = 8295C724CC26EC53BF6505794CC0D3E2 /* videoio.hpp */; };
+		9EE381A3CD9B02CA57688B62C5A8D8D7 /* cvstd.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 88ABCED2D1AB22526C8F89C581DC6F56 /* cvstd.hpp */; };
+		9FEAC65B8709D93349031A49011F5206 /* base.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 32FA881303C9C33E2FAE56DBA9687448 /* base.hpp */; };
+		A0C9D059A554D6B98535FB407B6D30D6 /* features2d.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9E02E1E980D015A4CF6D4362DEA85854 /* features2d.hpp */; };
+		A0D84A72F5100092933FA4C9722C18B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF860C0D2C249A26680274522438B89 /* Foundation.framework */; };
+		A0F74DC2431106377495BEBF18BD3F9F /* miniflann.hpp in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 25F2A151600DD17DD0DD618BD6EC7470 /* miniflann.hpp */; };
+		A3068F1B33C0933E4C0CDE51B844A8DB /* all_indices.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = D86CF3F57C94BA804DD5A9D7437AF081 /* all_indices.h */; };
+		A5187AFD030DB2B1EF5D3FBC3FCC212A /* objdetect.hpp in Copy objdetect Public Headers */ = {isa = PBXBuildFile; fileRef = AB7C5E17DA6FD541D7341808AFC9B606 /* objdetect.hpp */; };
+		A585BC77F9A5AA33922AACD9327424EF /* defines.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 0407E843D1C45F446C19C53A3DD43275 /* defines.h */; };
+		A5B4E588C45D32D9F1EDC242E84695A9 /* composite_index.h in Headers */ = {isa = PBXBuildFile; fileRef = 98080A3D1BBB6745D1EF920CE6BE3627 /* composite_index.h */; };
+		A68308B826688038740D02FF31862A98 /* tracking_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 720448E9CF76E680677ABF8E2D16310F /* tracking_c.h */; };
+		A693AB7A68F9CBD45F017615F0F59CD5 /* timer.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = E46A1AF06C54A0D7118B3C5707AB2FBC /* timer.h */; };
+		A69C5BC88C3622B6860B3D68D4C7AC02 /* affine.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 2DFBA73B4C9AA223348A81CFB4294DF5 /* affine.hpp */; };
+		A81463B3F68FED4996C99C518326933C /* cuda_types.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8353EB9101AF9E0D0AAF6D09945DFCAC /* cuda_types.hpp */; };
+		A91B97046EA3E159686A6AA5FDD4A430 /* Pods-FacifyTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF708DCE7EC52A292089C5166F961DBE /* Pods-FacifyTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9C9B34051345EE0FC7D76BE1A1172CE /* ptr.inl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C7A4A75477F7246150DF4CBE712F913C /* ptr.inl.hpp */; };
+		A9CD1730C10E98AB59008325D13C8E66 /* features2d.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 1FEFEC7CF1DF27E91981139640860BD1 /* features2d.hpp */; };
+		AA1FD9EA9507CD8D08534F1D12356C2B /* dnn.hpp in Copy dnn Public Headers */ = {isa = PBXBuildFile; fileRef = 0C723D1D0D677DB0A40545D3E15E12A8 /* dnn.hpp */; };
+		AA477F98CF9977D707FB92C3B6597162 /* warpers.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = 1EE9095B956C60303AF18517346F0883 /* warpers.hpp */; };
+		AA7E6DEDDDACBDC7C956643DBFB87C8F /* calib3d.hpp in Copy calib3d Public Headers */ = {isa = PBXBuildFile; fileRef = 18CF848789CE62E5BAC0120BFF060FD8 /* calib3d.hpp */; };
+		AA9C243945D0ED30EE4425AE0511D19C /* persistence.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 23D3FECCE939C34E1A3340B385A4A926 /* persistence.hpp */; };
+		AAC205F3326FDFE06041314928866B94 /* cvstd.inl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 50745D14EBA76C180D1CD7B4A535E7F9 /* cvstd.inl.hpp */; };
+		ABB00021FD3ED15782B77D717475950E /* all_indices.h in Headers */ = {isa = PBXBuildFile; fileRef = D86CF3F57C94BA804DD5A9D7437AF081 /* all_indices.h */; };
+		AC2CE51503453A0BC1DC5D56D253270D /* types_c.h in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 7F86E993E8A62A8366DCB64333DBFE44 /* types_c.h */; };
+		AD40EFFFDD7B07A42470B70A5BCA0434 /* mat.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 53FC8245D9FA69029E256F00BCC9E169 /* mat.hpp */; };
+		AD64B49359067E9353AF8247C3DCE086 /* cv_cpu_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 73C9BAF243CCAF975AE33D42563C9C42 /* cv_cpu_helper.h */; };
+		ADE49D133D02BBF771AFE742854159AE /* distortion_model.hpp in Copy imgproc/detail Public Headers */ = {isa = PBXBuildFile; fileRef = 429888072B4066A7EA929A18D9E8D6A8 /* distortion_model.hpp */; };
+		AF2B5942CF7C9587B075F36B87D458FD /* nn_index.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 325183DE4B163E0C61D3EBD64C1D0132 /* nn_index.h */; };
+		B05433575EEF40433B688C32168E195F /* ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 90238294BCF2C6461A505AC24B4CD6FA /* ios.h */; };
+		B0CD4386CE5B9CBC4AF64B4E45A49842 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342D5F9595253BA98E5EA40A3D21683A /* QuartzCore.framework */; };
+		B126014C0E953A6B89D5DAEA0FCEF478 /* bufferpool.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 87301CC5C0CF7E469BB4D05AF2C01B4A /* bufferpool.hpp */; };
+		B1A4B2A84865B14C3DCA51F01D2EA8F2 /* dnn.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0923490D59ED8ADDACB3E32B5A8A03A7 /* dnn.hpp */; };
+		B1DBE10AFA8F287638A485D639172B67 /* emdL1.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C2D21593708345A47CCF81A21436742A /* emdL1.hpp */; };
+		B2739FFFA2F2C9C4FF3EC7C66292CD5A /* core.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 887B0F3AA882C9B9C728CB66B6D078FE /* core.hpp */; };
+		B28B89149F9AB3CA768B703547FA9A22 /* lsh_table.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 510743CFF89AD78F48EE4D7C2B2FC1A7 /* lsh_table.h */; };
+		B2AA14A7347BC2779B2886F93FA34985 /* eigen.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = CC28814307FC8C87AE9CE88FA3EAE30D /* eigen.hpp */; };
+		B2FA6E37C756AEA1E3ABE19767CAE6EE /* opencv_modules.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 433ADE9A2A3400D190C3F873FE98DC63 /* opencv_modules.hpp */; };
+		B39CCE99719EF302B17911F825F73E2D /* imgproc_c.h in Headers */ = {isa = PBXBuildFile; fileRef = AC96132EBF1290DC177D657F9C66F187 /* imgproc_c.h */; };
+		B3EE246C852E35793935FE9EB7B3E6D4 /* cvconfig.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 8505CFC760072458958F7255829F5380 /* cvconfig.h */; };
+		B4C451BDCB30212637101C7BF3FB4602 /* types.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 8E50E1908F7F569B61A6544AEB042E25 /* types.hpp */; };
+		B54FD1DF3E91940E1CCE1B7A7FC7C678 /* directx.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 307251697914931CE54692E79028BD77 /* directx.hpp */; };
+		B627776245F334DA8C16C9D52F337FD4 /* Pods-FacifyUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 358BD17C4692009A02E4CE49ED2CAFB0 /* Pods-FacifyUITests-dummy.m */; };
+		B64F8D5CC96CE6F7A0FD03F470F35168 /* shape.hpp in Copy shape Public Headers */ = {isa = PBXBuildFile; fileRef = FBB698D673245663222C554057FE1AD2 /* shape.hpp */; };
+		B6A4948F806D2DAF7C5D0B2D0B868A02 /* random.h in Headers */ = {isa = PBXBuildFile; fileRef = 15952EDADD48032D3621CDC31E4EFFCE /* random.h */; };
+		B6BBD824C79725A41D012DF44D6D6675 /* intrin_cpp.hpp in Copy core/hal Public Headers */ = {isa = PBXBuildFile; fileRef = 101FA867B5A41D66E74F931F4646E62E /* intrin_cpp.hpp */; };
+		B75CEC837B8D9394AD401988B7AA9302 /* motion_stabilizing.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = 4AB7D107A9D4CA1C995C615C9F41C8A4 /* motion_stabilizing.hpp */; };
+		B82D81D7FA3A474226D2F7D8FC0205B8 /* mat.inl.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 8176B8B471027706B747A92722B5F59E /* mat.inl.hpp */; };
+		B8A3EC6881E2A93CD24E611B9EE7ACD1 /* layer.hpp in Copy dnn Public Headers */ = {isa = PBXBuildFile; fileRef = 26E6593A1311FF97CA839E66CB05C34F /* layer.hpp */; };
+		BB262F1BD67F2EC0916B0B04F51D6279 /* intrin.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 48CE466025D0ABFAB6A49AAB67C6B38E /* intrin.hpp */; };
+		BB9CC44707F83A0167094759B87461D6 /* videostab.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9F238DA5435302695250D8412A16C7C7 /* videostab.hpp */; };
+		BBD2CA28A132CE394BEC4DE3B2D27E97 /* fast_marching.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = 4570D8492A19F97A64949A7B24923885 /* fast_marching.hpp */; };
+		BD1CEC1775D19E96DCF5B6C865495C0A /* flann_base.hpp in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 8AA6C969AFAD10CFA416AF0BFA212F2A /* flann_base.hpp */; };
+		BF940E32BD7152A69BC4D1E7E064C03B /* lsh_table.h in Headers */ = {isa = PBXBuildFile; fileRef = 510743CFF89AD78F48EE4D7C2B2FC1A7 /* lsh_table.h */; };
+		C08FAFC5E7D187C5B956886A6912A765 /* directx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 307251697914931CE54692E79028BD77 /* directx.hpp */; };
+		C112314A05D5798EFC59648F74617E09 /* fast_math.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 481154E2F0A0FFC2730012A77F87E34F /* fast_math.hpp */; };
+		C4A39E30C25D1789AD4ADC97CF7586AE /* objdetect.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 3A6ACA45A9A9ADDBC4D1BC0503809139 /* objdetect.hpp */; };
+		C563C2F8A1C1606221A4AA900625F8F8 /* logger.hpp in Copy core/utils Public Headers */ = {isa = PBXBuildFile; fileRef = 683DD6C0556675B532B22A38B4CC5108 /* logger.hpp */; };
+		C66BCE38288408132193EAD5EC32E6AA /* calib3d.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 18CF848789CE62E5BAC0120BFF060FD8 /* calib3d.hpp */; };
+		C6F2F5211B0F970A08F46DA2BC469C4A /* random.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 15952EDADD48032D3621CDC31E4EFFCE /* random.h */; };
+		C72367CD4A6862903FECEA4282293CAF /* ground_truth.h in Headers */ = {isa = PBXBuildFile; fileRef = 703CD599CAE11725FC8E6F0E45C2C436 /* ground_truth.h */; };
+		C7527D819B567942C242B2BA79D76FDD /* saturate.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = C9CEED914014F99C85778D8A13D3AE3B /* saturate.hpp */; };
+		C7D1815C8ECD127FE188D2518C93B907 /* imgproc.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = D2CB824AEB18B73E1752F1D09D348DDD /* imgproc.hpp */; };
+		C836B5A68DA149E242D0A3CB93C73B6C /* optical_flow.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8237164AD9D323C385404A6F56333402 /* optical_flow.hpp */; };
+		C8DB017AF5E2C151CFF61FA587399777 /* wobble_suppression.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 990EA3B5B57C270CC819F1D0CD8B0956 /* wobble_suppression.hpp */; };
+		C988B7025CE5D560D24EF4C483222B26 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89097CBC80840086DF224E8CEEA44D92 /* CoreVideo.framework */; };
+		C99D10BF5356234DAB88DD4886B685EA /* highgui.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = B3A56399A841388C7DBD455C3E3F5099 /* highgui.hpp */; };
+		CA5B10143268A149998A55C48C085088 /* ptr.inl.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = C7A4A75477F7246150DF4CBE712F913C /* ptr.inl.hpp */; };
+		CA8B47D117C29D0CBCA631E2FC8E507C /* kdtree_index.h in Headers */ = {isa = PBXBuildFile; fileRef = 81C7416700E2C74C4832A064C3EB6941 /* kdtree_index.h */; };
+		CAE4AD813894D898D6681137918A8E3F /* dict.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3D1B8AE795FE09F923C0142A9D2FCEEC /* dict.hpp */; };
+		CB79A5C022136789383868A93B5A0FFF /* vsx_utils.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4424EA5096FBB7192E3EDF7B44A51E3E /* vsx_utils.hpp */; };
+		CB80D87978E6A491D2A2D224772949D9 /* cuda_stream_accessor.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = B8779C2E016A033226E21F7041EB6245 /* cuda_stream_accessor.hpp */; };
+		CCCFF2E5C88E75491C909E26554726FC /* hdf5.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 4245248DCE64C19BCE213AD50E96B370 /* hdf5.h */; };
+		CCF80AA3FB1A4E1AD5D3061E2D5405BF /* layer.details.hpp in Copy dnn Public Headers */ = {isa = PBXBuildFile; fileRef = 5678A10BA044FDB3EE120EC59F3447A8 /* layer.details.hpp */; };
+		CD5DCD76E6E0585DD3D3A7A592895E78 /* intrin_cpp.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 101FA867B5A41D66E74F931F4646E62E /* intrin_cpp.hpp */; };
+		CE36C280AD3C570E9059825675983662 /* Pods-Facify-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DB17117F6BEEA544005F21CC039749 /* Pods-Facify-dummy.m */; };
+		CE8B45220C5A2100F69D6A9EFF3576CE /* linear_index.h in Headers */ = {isa = PBXBuildFile; fileRef = F6EEDDEB455AC967C909282FE2E30FFB /* linear_index.h */; };
+		CFB5E0AB52312F6262D45D8806DB1D1C /* global_motion.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 65A1D062376E88BE0CABE631F79E895A /* global_motion.hpp */; };
+		D03DCBADB67C329DD01F932F2F8CDA20 /* dnn.inl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2BDD7A4937D81D1F96E97EBE70D3B920 /* dnn.inl.hpp */; };
+		D0700330A79359BCA49167A9C0B99B25 /* heap.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 2BF6874BA2056E6AA372421896045F61 /* heap.h */; };
+		D0CD76083DC4B541D9A8368BD851F7AC /* video.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = C6B7F729E7A40848F2CB806D7471724E /* video.hpp */; };
+		D1D827EFF6169FE214CD94FADFA795E0 /* softfloat.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F2C229D76D8B8A364962CF459A229757 /* softfloat.hpp */; };
+		D3C63C6BA6F895901214DE051B5BB65C /* hdf5.h in Headers */ = {isa = PBXBuildFile; fileRef = 4245248DCE64C19BCE213AD50E96B370 /* hdf5.h */; };
+		D46F10E98D72D5953FDDD2B82126C727 /* calib3d.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8FFC37E2D62785CC4938F62000F4D275 /* calib3d.hpp */; };
+		D63C2ED40288474BB559DA3C19817602 /* highgui.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 69A156916273A9A425D4714BD42C1802 /* highgui.hpp */; };
+		D67C1688775E66155A6D2456A25CF1E8 /* dict.hpp in Copy dnn Public Headers */ = {isa = PBXBuildFile; fileRef = 3D1B8AE795FE09F923C0142A9D2FCEEC /* dict.hpp */; };
+		D7114FF229B0AAF85B5D093D4504B5EB /* miniflann.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 25F2A151600DD17DD0DD618BD6EC7470 /* miniflann.hpp */; };
+		D717536786C49D0EEB6865DD2DDAD71F /* camera.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 374ED351167FB8A155AD22138F2BA76E /* camera.hpp */; };
+		D740EA2B95200531D672BFD3C21D456F /* utility.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = CEFCFF26D2B4F04079BB588B422A0895 /* utility.hpp */; };
+		D95F6B6465FA2A6448260BEF638109FD /* interface.h in Headers */ = {isa = PBXBuildFile; fileRef = 92F854066504746A3C6F24A68B8B023A /* interface.h */; };
+		D98CC0F964686CF9808C1D695101E1AA /* dnn.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 0923490D59ED8ADDACB3E32B5A8A03A7 /* dnn.hpp */; };
+		D9AB5F3C7BE7A07DDC89279660FF7370 /* objdetect.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AB7C5E17DA6FD541D7341808AFC9B606 /* objdetect.hpp */; };
+		DA48DF45962F06DCB864EF99E8A0E83B /* vsx_utils.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 4424EA5096FBB7192E3EDF7B44A51E3E /* vsx_utils.hpp */; };
+		DB2E5603A848DE73721C3E19CA1C99B6 /* interface.h in Copy core/hal Public Headers */ = {isa = PBXBuildFile; fileRef = 92F854066504746A3C6F24A68B8B023A /* interface.h */; };
+		DB89657CE7349F8B801A742F83C4C676 /* core_c.h in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 3A9F1F46ECA24C05AE969165514AC960 /* core_c.h */; };
+		DBB6F63603E8F9DFB9B51D68F1D3BF85 /* neon_utils.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F7597CED489F426D8FA2C7E457921134 /* neon_utils.hpp */; };
+		DDB6EAD6572554FDBC885950A5D59550 /* flann.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = F561F56AE5AC3179BB7C587606269393 /* flann.hpp */; };
+		E1B5A26AAB2C1E32B878FC0224E474FF /* layer.details.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5678A10BA044FDB3EE120EC59F3447A8 /* layer.details.hpp */; };
+		E2AF24BD3EA0E173E18A7A14C6FA8825 /* matx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 332A8717A2DD102D64AD59DF0267A27C /* matx.hpp */; };
+		E2E85E1B3B6081877A8E94BBCA9ACA05 /* ml.hpp in Copy ml Public Headers */ = {isa = PBXBuildFile; fileRef = 6E36E3B7A75CE2022E27A2B0A8D1F3B6 /* ml.hpp */; };
+		E5246FBA3DA8B3B731838E23F17A329E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF860C0D2C249A26680274522438B89 /* Foundation.framework */; };
+		E53F13C3FA81C19A40F5BC9A18E254E4 /* operations.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = F00888660DBE7A2CFB49D75B36F83418 /* operations.hpp */; };
+		E68EFFDE61A8C005646E3D27FBFB73E6 /* cuda.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6589ECB95533AA8164E2AF3755BFF3B3 /* cuda.hpp */; };
+		E6A426879C76676C0442F2E15683AB80 /* stabilizer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CA63223D59DC3C750A9C1423A3E2ABC2 /* stabilizer.hpp */; };
+		E6D4D95A9FE9C3E241F37D5E843EFA1A /* features2d.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1FEFEC7CF1DF27E91981139640860BD1 /* features2d.hpp */; };
+		E76F35F8BDC0F03DC79906D802CA1E40 /* cvdef.h in Headers */ = {isa = PBXBuildFile; fileRef = 5052B2E2DC3B1F17679067EC6DFBBA10 /* cvdef.h */; };
+		E771FDA3ABE1091E0DC9728BF17C1457 /* version.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 30D36D69EAFE0AA97A210934FD863E2E /* version.hpp */; };
+		E77F1B0C2625B58CB32964F09E92BAB8 /* dynamic_bitset.h in Headers */ = {isa = PBXBuildFile; fileRef = 2456C62970AC93BF0369918924006A34 /* dynamic_bitset.h */; };
+		E8C66B7E80BEC4202718492B8E9519E4 /* videoio.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = CF0330CAC47B04F5F29655499961B34C /* videoio.hpp */; };
+		E9486E13C03917929B65CCCD44BCFDA3 /* autotuned_index.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 9E5A202E27F8FA09DEE0D239FE64E8B5 /* autotuned_index.h */; };
+		EA31B1D74079F67E04582B9B704B21E2 /* highgui.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B3A56399A841388C7DBD455C3E3F5099 /* highgui.hpp */; };
+		EA7DE51283E8BD2521EEFA51D26D5A12 /* hierarchical_clustering_index.h in Headers */ = {isa = PBXBuildFile; fileRef = 42D40E2E371E1F8437F6E3FF5A9AC4C4 /* hierarchical_clustering_index.h */; };
+		EAEB1D428828AA60E8132A7C92DB99F6 /* photo.hpp in Copy photo Public Headers */ = {isa = PBXBuildFile; fileRef = 4016296190271E771C149B3FAFAB64D7 /* photo.hpp */; };
+		EC096889A2A8B30E0D2AFE952BEBE519 /* log.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9DC52626078F1F733BDDDB97CC6CF8D2 /* log.hpp */; };
+		ECBC79585DD095EB3B834A19FC15081E /* intrin_sse.hpp in Copy core/hal Public Headers */ = {isa = PBXBuildFile; fileRef = 19C84CCD2B3FEC1BDD754418790C6F50 /* intrin_sse.hpp */; };
+		ED32495DFAA33AE79BED61CC18365168 /* shape_transformer.hpp in Copy shape Public Headers */ = {isa = PBXBuildFile; fileRef = 1A12A9B53ADECD5CB8EDC9B90E8FE17B /* shape_transformer.hpp */; };
+		EE2696041EEFC8108A12E74C2C6E1BDB /* ml.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 409C44F696CA9E02DA3B77AD394E58DC /* ml.hpp */; };
+		EF07C4A75D94CBA1866735A66BA77542 /* intrin_neon.hpp in Copy core/hal Public Headers */ = {isa = PBXBuildFile; fileRef = 29C2E58AEFA5DBF4BDA2780E46A95264 /* intrin_neon.hpp */; };
+		EFC86DA8093E2F0E091ECF5D3B1B3ACF /* cuda.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 976BE07193CA088BA55350660994D980 /* cuda.hpp */; };
+		F169905EC1F2CA286C9BAAD74F16A1F9 /* dynamic_bitset.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 2456C62970AC93BF0369918924006A34 /* dynamic_bitset.h */; };
+		F1F32371AD7BB18C23112C79DB90FD4D /* operations.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F00888660DBE7A2CFB49D75B36F83418 /* operations.hpp */; };
+		F35B7CC3CB81051159F84BE7AC5BA70F /* opencv.hpp in Headers */ = {isa = PBXBuildFile; fileRef = EA5204F028B67A1D7E6B24DC312A7811 /* opencv.hpp */; };
+		F373C313FB4D77DFAB2C315B11D41DF0 /* imgproc.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D2CB824AEB18B73E1752F1D09D348DDD /* imgproc.hpp */; };
+		F53E45AED1963C53B48003895CACEA7E /* imgproc_c.h in Copy imgproc Public Headers */ = {isa = PBXBuildFile; fileRef = AC96132EBF1290DC177D657F9C66F187 /* imgproc_c.h */; };
+		F5A34AC240828F76A5636A03E24B79D9 /* saturate.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C9CEED914014F99C85778D8A13D3AE3B /* saturate.hpp */; };
+		F61DD18C89099C9F0AA178D9BE816DC8 /* core_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A9F1F46ECA24C05AE969165514AC960 /* core_c.h */; };
+		F69F01895B94511B0964CE28CE38A523 /* core.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 887B0F3AA882C9B9C728CB66B6D078FE /* core.hpp */; };
+		F899C1ACB9D4AE55ACC3A813000A580F /* dnn.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0C723D1D0D677DB0A40545D3E15E12A8 /* dnn.hpp */; };
+		F8B7D4D736463D7E1A484F852999FEB7 /* autocalib.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = 8D0F952886D152FC8FF6D6F99718811E /* autocalib.hpp */; };
+		F964BCA6468CA9B63367DF2A17855A13 /* util_inl.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = BD4A22B39A067ADC807E88DD716A724D /* util_inl.hpp */; };
+		F9A20281A91861C214F09738A2B66694 /* params.h in Headers */ = {isa = PBXBuildFile; fileRef = 305C8DDE61FAAEAFD744D9AB671335A0 /* params.h */; };
+		FA2F3FAE34B50193A6A5E4F27BAE85CB /* trace.hpp in Copy core/utils Public Headers */ = {isa = PBXBuildFile; fileRef = 62C73826C593FBE6281B12F29A8C0EFB /* trace.hpp */; };
+		FAAA2289B3E7091D3853DE72EE73EE2A /* detection_based_tracker.hpp in Copy objdetect Public Headers */ = {isa = PBXBuildFile; fileRef = 1A87B2363D744A6CABA0ED5AF74CC4C7 /* detection_based_tracker.hpp */; };
+		FC1B668ECE7631B14C8191868BEE8610 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227097DAAF604A4048A5A75D2780A1E6 /* AssetsLibrary.framework */; };
+		FC8F146235A72DB0A6B0A9DF45AFEC6F /* shape.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5DB4E1E9EB47115F0DEC5373EA6F0DEE /* shape.hpp */; };
+		FCCB9C39B77D95C7D89F66E03D2751DA /* utility.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CEFCFF26D2B4F04079BB588B422A0895 /* utility.hpp */; };
+		FD2A588A3A4C4650778FB81105821E91 /* Pods-Facify-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7527ABFDAA958F9385CC420480E41BD /* Pods-Facify-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE31F02CD0E29C26D8DF09DD7C608D45 /* features2d.hpp in Copy features2d Public Headers */ = {isa = PBXBuildFile; fileRef = 9E02E1E980D015A4CF6D4362DEA85854 /* features2d.hpp */; };
+		FE9996818D6FFB02E973E625020CDBB6 /* log.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = 9DC52626078F1F733BDDDB97CC6CF8D2 /* log.hpp */; };
+		FFA8072E0A332BA9D81D5155BE985AAC /* video.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C6B7F729E7A40848F2CB806D7471724E /* video.hpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2334356A8C0D5F2733C11D2C13361616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FAE7589D1C98F143580CF2B89012FBB;
+			remoteInfo = OpenCV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		199F0F9CF165E2799BC0B5D2DF768C1F /* Copy ml Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/ml";
+			dstSubfolderSpec = 16;
+			files = (
+				E2E85E1B3B6081877A8E94BBCA9ACA05 /* ml.hpp in Copy ml Public Headers */,
+			);
+			name = "Copy ml Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		325FB5F9B7F43012210583BF30C69801 /* Copy imgproc/detail Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/imgproc/detail";
+			dstSubfolderSpec = 16;
+			files = (
+				ADE49D133D02BBF771AFE742854159AE /* distortion_model.hpp in Copy imgproc/detail Public Headers */,
+			);
+			name = "Copy imgproc/detail Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A1E4A8C8D72BE5515A0726F70B1C1B4 /* Copy imgproc/hal Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/imgproc/hal";
+			dstSubfolderSpec = 16;
+			files = (
+				755E4524E8F1D99278C177CA5342BEAB /* hal.hpp in Copy imgproc/hal Public Headers */,
+				2F73F7732DDE3B53EEC163CDA4DE79C8 /* interface.h in Copy imgproc/hal Public Headers */,
+			);
+			name = "Copy imgproc/hal Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		433A166CD4F67649D54D52E885917995 /* Copy features2d Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/features2d";
+			dstSubfolderSpec = 16;
+			files = (
+				FE31F02CD0E29C26D8DF09DD7C608D45 /* features2d.hpp in Copy features2d Public Headers */,
+			);
+			name = "Copy features2d Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		523F400C760C4F87067B2FE6FDDFD3F9 /* Copy videostab Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/videostab";
+			dstSubfolderSpec = 16;
+			files = (
+				12EC2390C8280C4D58AE2E4B60256ACE /* deblurring.hpp in Copy videostab Public Headers */,
+				BBD2CA28A132CE394BEC4DE3B2D27E97 /* fast_marching.hpp in Copy videostab Public Headers */,
+				9A9AA1F8936C734FE58337A9E0CA3A35 /* fast_marching_inl.hpp in Copy videostab Public Headers */,
+				7414A7C81DB0300F41F654B1007FF564 /* frame_source.hpp in Copy videostab Public Headers */,
+				20CAB5FA814E93547894A3D01DA468A0 /* global_motion.hpp in Copy videostab Public Headers */,
+				008FB836232EA3AF54032419BC4F359B /* inpainting.hpp in Copy videostab Public Headers */,
+				FE9996818D6FFB02E973E625020CDBB6 /* log.hpp in Copy videostab Public Headers */,
+				14B66A08882AD2A4547232D819319DB3 /* motion_core.hpp in Copy videostab Public Headers */,
+				B75CEC837B8D9394AD401988B7AA9302 /* motion_stabilizing.hpp in Copy videostab Public Headers */,
+				0538CD8246F72E5A955DDBB5637FA656 /* optical_flow.hpp in Copy videostab Public Headers */,
+				3CCDC1975A76A845EDA74840F7F9121C /* outlier_rejection.hpp in Copy videostab Public Headers */,
+				0CE89A12DD3BF060B634D303E972E8D3 /* ring_buffer.hpp in Copy videostab Public Headers */,
+				177AD9B41F561F5F38FF38F6FF1B23F5 /* stabilizer.hpp in Copy videostab Public Headers */,
+				948A669D39F1AB45CC4066CC196A5411 /* wobble_suppression.hpp in Copy videostab Public Headers */,
+			);
+			name = "Copy videostab Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDC2F0A3D365AB492CEBB9082B8CEB8 /* Copy stitching/detail Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/stitching/detail";
+			dstSubfolderSpec = 16;
+			files = (
+				F8B7D4D736463D7E1A484F852999FEB7 /* autocalib.hpp in Copy stitching/detail Public Headers */,
+				36A3DCDBF95F255024AE1B31BF22ABE0 /* blenders.hpp in Copy stitching/detail Public Headers */,
+				5068B87CBE4460E786D8250B1874D793 /* camera.hpp in Copy stitching/detail Public Headers */,
+				8DAC5519FFB025D01D8625611BBA86D8 /* exposure_compensate.hpp in Copy stitching/detail Public Headers */,
+				8B5E887A1A687BE18E01777A95EFF6EF /* matchers.hpp in Copy stitching/detail Public Headers */,
+				9C1651CCE98932903958A995885822BE /* motion_estimators.hpp in Copy stitching/detail Public Headers */,
+				8753D263876CE0BD708AAD0A3A927A3B /* seam_finders.hpp in Copy stitching/detail Public Headers */,
+				7F70F3B0D1F345F62F9072BEC4B2A98E /* timelapsers.hpp in Copy stitching/detail Public Headers */,
+				1A8D121F9CF455084AF0CED2FF9463BA /* util.hpp in Copy stitching/detail Public Headers */,
+				F964BCA6468CA9B63367DF2A17855A13 /* util_inl.hpp in Copy stitching/detail Public Headers */,
+				AA477F98CF9977D707FB92C3B6597162 /* warpers.hpp in Copy stitching/detail Public Headers */,
+				73B4F6BBD0C651645FC39F7B53399DE6 /* warpers_inl.hpp in Copy stitching/detail Public Headers */,
+			);
+			name = "Copy stitching/detail Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FF7192AE4D61F757FAA100AB8D81B66 /* Copy . Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/.";
+			dstSubfolderSpec = 16;
+			files = (
+				469D1927279357F01360C0002D96959D /* calib3d.hpp in Copy . Public Headers */,
+				713433B9FE9621D89379DF6EB9E24132 /* core.hpp in Copy . Public Headers */,
+				B3EE246C852E35793935FE9EB7B3E6D4 /* cvconfig.h in Copy . Public Headers */,
+				D98CC0F964686CF9808C1D695101E1AA /* dnn.hpp in Copy . Public Headers */,
+				A9CD1730C10E98AB59008325D13C8E66 /* features2d.hpp in Copy . Public Headers */,
+				DDB6EAD6572554FDBC885950A5D59550 /* flann.hpp in Copy . Public Headers */,
+				C99D10BF5356234DAB88DD4886B685EA /* highgui.hpp in Copy . Public Headers */,
+				15531599A8310BC102ED53D21A21700D /* imgcodecs.hpp in Copy . Public Headers */,
+				C7D1815C8ECD127FE188D2518C93B907 /* imgproc.hpp in Copy . Public Headers */,
+				EE2696041EEFC8108A12E74C2C6E1BDB /* ml.hpp in Copy . Public Headers */,
+				C4A39E30C25D1789AD4ADC97CF7586AE /* objdetect.hpp in Copy . Public Headers */,
+				8F6B442EEFFB148EC47FDD7E539860C8 /* opencv.hpp in Copy . Public Headers */,
+				9053F98D529C9602E39ECBDF09003643 /* opencv_modules.hpp in Copy . Public Headers */,
+				4873E1423B5A9FB3D0A89AAE1299A9A4 /* photo.hpp in Copy . Public Headers */,
+				5C8DC434D7CC840A8412B8420246751D /* shape.hpp in Copy . Public Headers */,
+				004E18E69DDFD9FA899B933EBECDDF4A /* stitching.hpp in Copy . Public Headers */,
+				D0CD76083DC4B541D9A8368BD851F7AC /* video.hpp in Copy . Public Headers */,
+				E8C66B7E80BEC4202718492B8E9519E4 /* videoio.hpp in Copy . Public Headers */,
+				9693864D8B3DD17CA9D677251ECAC3A1 /* videostab.hpp in Copy . Public Headers */,
+				6EE7EDB822EFE3AF0CBB821A195659AC /* world.hpp in Copy . Public Headers */,
+			);
+			name = "Copy . Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61FAEE7A112E0BCF0DB6BA8777458FBC /* Copy dnn Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/dnn";
+			dstSubfolderSpec = 16;
+			files = (
+				6F0EBF49987407BD5479AD0580F7FDA5 /* all_layers.hpp in Copy dnn Public Headers */,
+				D67C1688775E66155A6D2456A25CF1E8 /* dict.hpp in Copy dnn Public Headers */,
+				AA1FD9EA9507CD8D08534F1D12356C2B /* dnn.hpp in Copy dnn Public Headers */,
+				2BDEE3F02F2D87238A12BB4433F8D152 /* dnn.inl.hpp in Copy dnn Public Headers */,
+				CCF80AA3FB1A4E1AD5D3061E2D5405BF /* layer.details.hpp in Copy dnn Public Headers */,
+				B8A3EC6881E2A93CD24E611B9EE7ACD1 /* layer.hpp in Copy dnn Public Headers */,
+				9745E5F25145F66E63F2B240B3AAB362 /* shape_utils.hpp in Copy dnn Public Headers */,
+			);
+			name = "Copy dnn Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F31561BBE54715A2BB56F6F5415139 /* Copy videoio Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/videoio";
+			dstSubfolderSpec = 16;
+			files = (
+				28E9916EED58DAFE9DCD90D23647B8F1 /* cap_ios.h in Copy videoio Public Headers */,
+				9ED86ED4191827280979E7D5A56E90E9 /* videoio.hpp in Copy videoio Public Headers */,
+				478E898C82E3687A422958C92557DBE5 /* videoio_c.h in Copy videoio Public Headers */,
+			);
+			name = "Copy videoio Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7429558D0D015901AC7CB9936DAFDE6F /* Copy shape Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/shape";
+			dstSubfolderSpec = 16;
+			files = (
+				4312FDC2296A2FC1FA95318538043F5B /* emdL1.hpp in Copy shape Public Headers */,
+				6386BCB57A6D4417CECE0441A48F892D /* hist_cost.hpp in Copy shape Public Headers */,
+				B64F8D5CC96CE6F7A0FD03F470F35168 /* shape.hpp in Copy shape Public Headers */,
+				91C54DD5514849A0816AA704BAEC97D7 /* shape_distance.hpp in Copy shape Public Headers */,
+				ED32495DFAA33AE79BED61CC18365168 /* shape_transformer.hpp in Copy shape Public Headers */,
+			);
+			name = "Copy shape Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CE0FCEECD60FB02D6184A95BB8D8107 /* Copy objdetect Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/objdetect";
+			dstSubfolderSpec = 16;
+			files = (
+				FAAA2289B3E7091D3853DE72EE73EE2A /* detection_based_tracker.hpp in Copy objdetect Public Headers */,
+				A5187AFD030DB2B1EF5D3FBC3FCC212A /* objdetect.hpp in Copy objdetect Public Headers */,
+				9AA62613C34B189CF133B316953B10EB /* objdetect_c.h in Copy objdetect Public Headers */,
+			);
+			name = "Copy objdetect Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E1E00E1CC39440BF74AA5878549721F /* Copy highgui Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/highgui";
+			dstSubfolderSpec = 16;
+			files = (
+				70980A657C7274B02D1C5C1299475B76 /* highgui.hpp in Copy highgui Public Headers */,
+				93622E192081B43BEF053F8C1732EACD /* highgui_c.h in Copy highgui Public Headers */,
+			);
+			name = "Copy highgui Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8177DEA7FE304611C07E6EB477C1C431 /* Copy flann Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/flann";
+			dstSubfolderSpec = 16;
+			files = (
+				A3068F1B33C0933E4C0CDE51B844A8DB /* all_indices.h in Copy flann Public Headers */,
+				34543049075BBCF88707D925B2BC8609 /* allocator.h in Copy flann Public Headers */,
+				7D075DFF94311374A840F1EB22397020 /* any.h in Copy flann Public Headers */,
+				E9486E13C03917929B65CCCD44BCFDA3 /* autotuned_index.h in Copy flann Public Headers */,
+				322F077F8C8D7AFAB2851B2DA8B05E23 /* composite_index.h in Copy flann Public Headers */,
+				6247E9A25F4F8BC377BFE8F02E2BA34D /* config.h in Copy flann Public Headers */,
+				A585BC77F9A5AA33922AACD9327424EF /* defines.h in Copy flann Public Headers */,
+				58E603BCF68932FC059FF721E04FD743 /* dist.h in Copy flann Public Headers */,
+				94E51F23F34473A09BAC1A576C57A574 /* dummy.h in Copy flann Public Headers */,
+				F169905EC1F2CA286C9BAAD74F16A1F9 /* dynamic_bitset.h in Copy flann Public Headers */,
+				27947A6675D42711698B43E4B14737A6 /* flann.hpp in Copy flann Public Headers */,
+				BD1CEC1775D19E96DCF5B6C865495C0A /* flann_base.hpp in Copy flann Public Headers */,
+				6C3B1EA33B89B35526DA077DBE5F85BC /* general.h in Copy flann Public Headers */,
+				343B43E817C0A99284897256290BC1E5 /* ground_truth.h in Copy flann Public Headers */,
+				CCCFF2E5C88E75491C909E26554726FC /* hdf5.h in Copy flann Public Headers */,
+				D0700330A79359BCA49167A9C0B99B25 /* heap.h in Copy flann Public Headers */,
+				8500F80473F545AC556FF08115443D08 /* hierarchical_clustering_index.h in Copy flann Public Headers */,
+				13C201A4F5284DE9475F571ADE1A51C8 /* index_testing.h in Copy flann Public Headers */,
+				7A6226062304407FE490F8794C86F4E8 /* kdtree_index.h in Copy flann Public Headers */,
+				73F5EEEF9BDDD5BD3C8E2271903CD560 /* kdtree_single_index.h in Copy flann Public Headers */,
+				29E9C5A671B5391E5E2988478B684048 /* kmeans_index.h in Copy flann Public Headers */,
+				5C228388DDED83E5F82E2E336AC43630 /* linear_index.h in Copy flann Public Headers */,
+				98B10FC827B91B7D9941E68C8B1AE2F5 /* logger.h in Copy flann Public Headers */,
+				0B111E87CE9078CAEE0A17A5E3EE2808 /* lsh_index.h in Copy flann Public Headers */,
+				B28B89149F9AB3CA768B703547FA9A22 /* lsh_table.h in Copy flann Public Headers */,
+				89268AC900A26251800497F9D5D8EBBA /* matrix.h in Copy flann Public Headers */,
+				A0F74DC2431106377495BEBF18BD3F9F /* miniflann.hpp in Copy flann Public Headers */,
+				AF2B5942CF7C9587B075F36B87D458FD /* nn_index.h in Copy flann Public Headers */,
+				63C071B40456CC1D204FD6D509525B80 /* object_factory.h in Copy flann Public Headers */,
+				4E977CB89F8FB447140F8A5E4B73BA95 /* params.h in Copy flann Public Headers */,
+				C6F2F5211B0F970A08F46DA2BC469C4A /* random.h in Copy flann Public Headers */,
+				426BEF9419CDF6A762038ABB81979E60 /* result_set.h in Copy flann Public Headers */,
+				9C7B3F28BBF7B53D62D4611FB0B1B266 /* sampling.h in Copy flann Public Headers */,
+				05AB9F8DA116BC39062C3CD55A1E9D48 /* saving.h in Copy flann Public Headers */,
+				9B75B474D637EAC12AFC9DEF84E80DFA /* simplex_downhill.h in Copy flann Public Headers */,
+				A693AB7A68F9CBD45F017615F0F59CD5 /* timer.h in Copy flann Public Headers */,
+			);
+			name = "Copy flann Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6959A3252BAFACE5E92D908F12227DA /* Copy video Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/video";
+			dstSubfolderSpec = 16;
+			files = (
+				4D60F03352DF3C7FC4EEBCCAE0CA5B49 /* background_segm.hpp in Copy video Public Headers */,
+				73C5889DA3B98DAEDBCC57DDA2777C78 /* tracking.hpp in Copy video Public Headers */,
+				172658A10694CAF8BBD882A48AF8794A /* tracking_c.h in Copy video Public Headers */,
+				48588E486EAD85371398BABEA3A22739 /* video.hpp in Copy video Public Headers */,
+			);
+			name = "Copy video Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C26824D82B324E4C516FE904C73FD649 /* Copy core Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/core";
+			dstSubfolderSpec = 16;
+			files = (
+				A69C5BC88C3622B6860B3D68D4C7AC02 /* affine.hpp in Copy core Public Headers */,
+				9FEAC65B8709D93349031A49011F5206 /* base.hpp in Copy core Public Headers */,
+				B126014C0E953A6B89D5DAEA0FCEF478 /* bufferpool.hpp in Copy core Public Headers */,
+				F69F01895B94511B0964CE28CE38A523 /* core.hpp in Copy core Public Headers */,
+				DB89657CE7349F8B801A742F83C4C676 /* core_c.h in Copy core Public Headers */,
+				985936692699D4EA53FDE2DEBEC464BA /* cuda.hpp in Copy core Public Headers */,
+				6F90C43862DB5AB5DB506124C95AE4E7 /* cuda.inl.hpp in Copy core Public Headers */,
+				CB80D87978E6A491D2A2D224772949D9 /* cuda_stream_accessor.hpp in Copy core Public Headers */,
+				2BF9004F7FD4CCD7274569B8859486E8 /* cuda_types.hpp in Copy core Public Headers */,
+				347C19B4E7B18E14E3A495F31A730E4D /* cv_cpu_dispatch.h in Copy core Public Headers */,
+				27FF6E5D9733BEF5DA9809EBBB8543EF /* cv_cpu_helper.h in Copy core Public Headers */,
+				6CEE1E19C8EEEAFC946B36122BAA7E45 /* cvdef.h in Copy core Public Headers */,
+				1C2C333888B6A5F2F030B221F9BCA48E /* cvstd.hpp in Copy core Public Headers */,
+				2E043FF88F5392452D3356F49F716DEE /* cvstd.inl.hpp in Copy core Public Headers */,
+				B54FD1DF3E91940E1CCE1B7A7FC7C678 /* directx.hpp in Copy core Public Headers */,
+				B2AA14A7347BC2779B2886F93FA34985 /* eigen.hpp in Copy core Public Headers */,
+				C112314A05D5798EFC59648F74617E09 /* fast_math.hpp in Copy core Public Headers */,
+				2CFFDFC2C44D8CFE632A4AA58D0A897C /* ippasync.hpp in Copy core Public Headers */,
+				9D28C394EC683CB2FB49DE16D5072A56 /* mat.hpp in Copy core Public Headers */,
+				B82D81D7FA3A474226D2F7D8FC0205B8 /* mat.inl.hpp in Copy core Public Headers */,
+				38A30E7EC59D8A57BB895BC9A33A9669 /* matx.hpp in Copy core Public Headers */,
+				33C13F4FC4239775AD1519B5EF376B0E /* neon_utils.hpp in Copy core Public Headers */,
+				81B3CA84D10640DB33C5497622ACF332 /* ocl.hpp in Copy core Public Headers */,
+				1FF0CAFB039C94D2F009ED9AE0EBC775 /* ocl_genbase.hpp in Copy core Public Headers */,
+				997D83C61373CC5A44200F9AB909259D /* opengl.hpp in Copy core Public Headers */,
+				E53F13C3FA81C19A40F5BC9A18E254E4 /* operations.hpp in Copy core Public Headers */,
+				32A01DFE5D20C281482098E174F25A92 /* optim.hpp in Copy core Public Headers */,
+				5419FDC6A44DF675C0C2EDF0C5FCAF8B /* ovx.hpp in Copy core Public Headers */,
+				AA9C243945D0ED30EE4425AE0511D19C /* persistence.hpp in Copy core Public Headers */,
+				CA5B10143268A149998A55C48C085088 /* ptr.inl.hpp in Copy core Public Headers */,
+				C7527D819B567942C242B2BA79D76FDD /* saturate.hpp in Copy core Public Headers */,
+				956889EC416AFABCB271C584F76828BA /* softfloat.hpp in Copy core Public Headers */,
+				4B4B3461FF4128D18AAE57FDA6165BA6 /* sse_utils.hpp in Copy core Public Headers */,
+				929EA0A2116DE1E6D4D08E22A740E440 /* traits.hpp in Copy core Public Headers */,
+				B4C451BDCB30212637101C7BF3FB4602 /* types.hpp in Copy core Public Headers */,
+				AC2CE51503453A0BC1DC5D56D253270D /* types_c.h in Copy core Public Headers */,
+				D740EA2B95200531D672BFD3C21D456F /* utility.hpp in Copy core Public Headers */,
+				6E470DFAA8C0881B0914D576712E7455 /* va_intel.hpp in Copy core Public Headers */,
+				6652AAD553F042843CD6E288C585D53F /* version.hpp in Copy core Public Headers */,
+				DA48DF45962F06DCB864EF99E8A0E83B /* vsx_utils.hpp in Copy core Public Headers */,
+				528CFB2F971E5BB4F71317B57E139A60 /* wimage.hpp in Copy core Public Headers */,
+			);
+			name = "Copy core Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC2E3A5086FB2B2C4B8DB5B669630DD /* Copy core/hal Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/core/hal";
+			dstSubfolderSpec = 16;
+			files = (
+				585A12447573829F28C6A25AAC97930F /* hal.hpp in Copy core/hal Public Headers */,
+				DB2E5603A848DE73721C3E19CA1C99B6 /* interface.h in Copy core/hal Public Headers */,
+				35B58E8E927B35EB957DA738669AACE3 /* intrin.hpp in Copy core/hal Public Headers */,
+				B6BBD824C79725A41D012DF44D6D6675 /* intrin_cpp.hpp in Copy core/hal Public Headers */,
+				EF07C4A75D94CBA1866735A66BA77542 /* intrin_neon.hpp in Copy core/hal Public Headers */,
+				ECBC79585DD095EB3B834A19FC15081E /* intrin_sse.hpp in Copy core/hal Public Headers */,
+				578E2C1F9431E49D1C267181F57F3446 /* intrin_vsx.hpp in Copy core/hal Public Headers */,
+			);
+			name = "Copy core/hal Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0D7DB8F6CF4ADCA300D01067A6E0EEF /* Copy imgproc Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/imgproc";
+			dstSubfolderSpec = 16;
+			files = (
+				01552E86B8DCFEFB04870D0D81487D00 /* imgproc.hpp in Copy imgproc Public Headers */,
+				F53E45AED1963C53B48003895CACEA7E /* imgproc_c.h in Copy imgproc Public Headers */,
+				0FEB8EE99B5F0DC81F5290287D1035AD /* types_c.h in Copy imgproc Public Headers */,
+			);
+			name = "Copy imgproc Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9295873344130B7DC3ACC472FF66147 /* Copy calib3d Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/calib3d";
+			dstSubfolderSpec = 16;
+			files = (
+				AA7E6DEDDDACBDC7C956643DBFB87C8F /* calib3d.hpp in Copy calib3d Public Headers */,
+				0A83BB6372BC06A885ADACCCF420C266 /* calib3d_c.h in Copy calib3d Public Headers */,
+			);
+			name = "Copy calib3d Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE2689A7AD670808012B0A599BEB0AB8 /* Copy stitching Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/stitching";
+			dstSubfolderSpec = 16;
+			files = (
+				74CCE2A5F67CC1F6B9FA0279F07157AA /* warpers.hpp in Copy stitching Public Headers */,
+			);
+			name = "Copy stitching Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE8DFF38FA452DD2930B9BBA603A2213 /* Copy imgcodecs Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/imgcodecs";
+			dstSubfolderSpec = 16;
+			files = (
+				8C1677D5755E84C13983B540CA6994F7 /* imgcodecs.hpp in Copy imgcodecs Public Headers */,
+				94C776EBB1B5170373BB0E80C5B72786 /* imgcodecs_c.h in Copy imgcodecs Public Headers */,
+				28C444016CD53858D3F1C21FA8FC64FA /* ios.h in Copy imgcodecs Public Headers */,
+			);
+			name = "Copy imgcodecs Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D30E5D7D2FC3CA652319943C5D16C8 /* Copy photo Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/photo";
+			dstSubfolderSpec = 16;
+			files = (
+				0979EE3EE0E53B7F872A18C2D47165CB /* cuda.hpp in Copy photo Public Headers */,
+				EAEB1D428828AA60E8132A7C92DB99F6 /* photo.hpp in Copy photo Public Headers */,
+				0DAFD9F953C0448EB7A49D61965E4013 /* photo_c.h in Copy photo Public Headers */,
+			);
+			name = "Copy photo Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB20702F4E04B49A6AA79248E37920E1 /* Copy core/utils Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/core/utils";
+			dstSubfolderSpec = 16;
+			files = (
+				C563C2F8A1C1606221A4AA900625F8F8 /* logger.hpp in Copy core/utils Public Headers */,
+				FA2F3FAE34B50193A6A5E4F27BAE85CB /* trace.hpp in Copy core/utils Public Headers */,
+			);
+			name = "Copy core/utils Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00153BD01A493CD05C9F802F02C6C4D4 /* simplex_downhill.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = simplex_downhill.h; path = ios/include/flann/simplex_downhill.h; sourceTree = "<group>"; };
+		03263BB27219DC2EA2E3B17D42AD439F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		0407E843D1C45F446C19C53A3DD43275 /* defines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = defines.h; path = ios/include/flann/defines.h; sourceTree = "<group>"; };
+		04D56CEB452F703D306ED5BE80CEF641 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		061448CD590FF7303D461F65757860A5 /* Pods-FacifyUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FacifyUITests-resources.sh"; sourceTree = "<group>"; };
+		0771713B6F6845906E3D5E0F450630E9 /* blenders.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = blenders.hpp; path = ios/include/stitching/detail/blenders.hpp; sourceTree = "<group>"; };
+		07B3679913C94030205132CD62164324 /* Pods-FacifyTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FacifyTests-dummy.m"; sourceTree = "<group>"; };
+		0859373D08607471A542ED487D10E7A5 /* dummy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dummy.h; path = ios/include/flann/dummy.h; sourceTree = "<group>"; };
+		08C49C8D382F45D70C95629AD22A03BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0923490D59ED8ADDACB3E32B5A8A03A7 /* dnn.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = dnn.hpp; path = ios/include/dnn.hpp; sourceTree = "<group>"; };
+		0A111D97DE89DD80C5090965054AEFCA /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Empty.m; sourceTree = "<group>"; };
+		0A52D391C9C2E75FA749FC5AE8150565 /* fast_marching_inl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = fast_marching_inl.hpp; path = ios/include/videostab/fast_marching_inl.hpp; sourceTree = "<group>"; };
+		0C723D1D0D677DB0A40545D3E15E12A8 /* dnn.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = dnn.hpp; path = ios/include/dnn/dnn.hpp; sourceTree = "<group>"; };
+		0C8B05D05B932E50136D7D17B7A65372 /* inpainting.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = inpainting.hpp; path = ios/include/videostab/inpainting.hpp; sourceTree = "<group>"; };
+		0E2473063C1598270687DDF4E096B0AC /* Pods-FacifyUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FacifyUITests-umbrella.h"; sourceTree = "<group>"; };
+		101FA867B5A41D66E74F931F4646E62E /* intrin_cpp.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = intrin_cpp.hpp; path = ios/include/core/hal/intrin_cpp.hpp; sourceTree = "<group>"; };
+		14E98BE8EA60837754FCEC75C0FFE9CF /* motion_estimators.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = motion_estimators.hpp; path = ios/include/stitching/detail/motion_estimators.hpp; sourceTree = "<group>"; };
+		1565C670F07F2D6A0BEC028DF6CFCD91 /* all_layers.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = all_layers.hpp; path = ios/include/dnn/all_layers.hpp; sourceTree = "<group>"; };
+		156BE904DAF73C8833B70E1779B4B6AB /* ring_buffer.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ring_buffer.hpp; path = ios/include/videostab/ring_buffer.hpp; sourceTree = "<group>"; };
+		15893F00011E1950D8EFB806AF8AD028 /* OpenCV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OpenCV-dummy.m"; sourceTree = "<group>"; };
+		15952EDADD48032D3621CDC31E4EFFCE /* random.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = random.h; path = ios/include/flann/random.h; sourceTree = "<group>"; };
+		179B53FE50697B019BC8FB54BD3E4F83 /* Pods-FacifyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FacifyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		18CF848789CE62E5BAC0120BFF060FD8 /* calib3d.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = calib3d.hpp; path = ios/include/calib3d/calib3d.hpp; sourceTree = "<group>"; };
+		19C84CCD2B3FEC1BDD754418790C6F50 /* intrin_sse.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = intrin_sse.hpp; path = ios/include/core/hal/intrin_sse.hpp; sourceTree = "<group>"; };
+		1A12A9B53ADECD5CB8EDC9B90E8FE17B /* shape_transformer.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = shape_transformer.hpp; path = ios/include/shape/shape_transformer.hpp; sourceTree = "<group>"; };
+		1A87B2363D744A6CABA0ED5AF74CC4C7 /* detection_based_tracker.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = detection_based_tracker.hpp; path = ios/include/objdetect/detection_based_tracker.hpp; sourceTree = "<group>"; };
+		1EE9095B956C60303AF18517346F0883 /* warpers.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = warpers.hpp; path = ios/include/stitching/detail/warpers.hpp; sourceTree = "<group>"; };
+		1F57EC9D072477B9E4783E54AE44DA47 /* ocl_genbase.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ocl_genbase.hpp; path = ios/include/core/ocl_genbase.hpp; sourceTree = "<group>"; };
+		1FC6264343C826E14FCEBB29691D8FEB /* frame_source.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = frame_source.hpp; path = ios/include/videostab/frame_source.hpp; sourceTree = "<group>"; };
+		1FEFEC7CF1DF27E91981139640860BD1 /* features2d.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = features2d.hpp; path = ios/include/features2d.hpp; sourceTree = "<group>"; };
+		20D65603661ABFCEF39FA4B746F3B842 /* objdetect_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = objdetect_c.h; path = ios/include/objdetect/objdetect_c.h; sourceTree = "<group>"; };
+		227097DAAF604A4048A5A75D2780A1E6 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		23AEFAF96527A939FC65CA7791C58DA0 /* interface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = interface.h; path = ios/include/imgproc/hal/interface.h; sourceTree = "<group>"; };
+		23D3FECCE939C34E1A3340B385A4A926 /* persistence.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = persistence.hpp; path = ios/include/core/persistence.hpp; sourceTree = "<group>"; };
+		2456C62970AC93BF0369918924006A34 /* dynamic_bitset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dynamic_bitset.h; path = ios/include/flann/dynamic_bitset.h; sourceTree = "<group>"; };
+		25F2A151600DD17DD0DD618BD6EC7470 /* miniflann.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = miniflann.hpp; path = ios/include/flann/miniflann.hpp; sourceTree = "<group>"; };
+		2671D608A7C9BE40F1D3BA70D8F98FF0 /* any.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = any.h; path = ios/include/flann/any.h; sourceTree = "<group>"; };
+		26E6593A1311FF97CA839E66CB05C34F /* layer.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = layer.hpp; path = ios/include/dnn/layer.hpp; sourceTree = "<group>"; };
+		29C2E58AEFA5DBF4BDA2780E46A95264 /* intrin_neon.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = intrin_neon.hpp; path = ios/include/core/hal/intrin_neon.hpp; sourceTree = "<group>"; };
+		2BDD7A4937D81D1F96E97EBE70D3B920 /* dnn.inl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = dnn.inl.hpp; path = ios/include/dnn/dnn.inl.hpp; sourceTree = "<group>"; };
+		2BF6874BA2056E6AA372421896045F61 /* heap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = heap.h; path = ios/include/flann/heap.h; sourceTree = "<group>"; };
+		2C0B14BA6E206FF25808730F7E52631C /* traits.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = traits.hpp; path = ios/include/core/traits.hpp; sourceTree = "<group>"; };
+		2CC6C9BD245036E98FF0ECC1A63F9212 /* Pods-Facify-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Facify-acknowledgements.plist"; sourceTree = "<group>"; };
+		2DFBA73B4C9AA223348A81CFB4294DF5 /* affine.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = affine.hpp; path = ios/include/core/affine.hpp; sourceTree = "<group>"; };
+		305C8DDE61FAAEAFD744D9AB671335A0 /* params.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = params.h; path = ios/include/flann/params.h; sourceTree = "<group>"; };
+		307251697914931CE54692E79028BD77 /* directx.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = directx.hpp; path = ios/include/core/directx.hpp; sourceTree = "<group>"; };
+		30D36D69EAFE0AA97A210934FD863E2E /* version.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = version.hpp; path = ios/include/core/version.hpp; sourceTree = "<group>"; };
+		325183DE4B163E0C61D3EBD64C1D0132 /* nn_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = nn_index.h; path = ios/include/flann/nn_index.h; sourceTree = "<group>"; };
+		32AE690BFB5528CD1E5AF2C32260A57C /* intrin_vsx.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = intrin_vsx.hpp; path = ios/include/core/hal/intrin_vsx.hpp; sourceTree = "<group>"; };
+		32FA881303C9C33E2FAE56DBA9687448 /* base.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = base.hpp; path = ios/include/core/base.hpp; sourceTree = "<group>"; };
+		332A8717A2DD102D64AD59DF0267A27C /* matx.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = matx.hpp; path = ios/include/core/matx.hpp; sourceTree = "<group>"; };
+		33D959246AF429B191CA1EB1972FAF7D /* kmeans_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kmeans_index.h; path = ios/include/flann/kmeans_index.h; sourceTree = "<group>"; };
+		342D5F9595253BA98E5EA40A3D21683A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		358BD17C4692009A02E4CE49ED2CAFB0 /* Pods-FacifyUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FacifyUITests-dummy.m"; sourceTree = "<group>"; };
+		35AFA6BFBD2D80A9268FC886234A7F5D /* photo_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = photo_c.h; path = ios/include/photo/photo_c.h; sourceTree = "<group>"; };
+		3733400897AEC0995BBD56EE53E7BDA2 /* seam_finders.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = seam_finders.hpp; path = ios/include/stitching/detail/seam_finders.hpp; sourceTree = "<group>"; };
+		374ED351167FB8A155AD22138F2BA76E /* camera.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = camera.hpp; path = ios/include/stitching/detail/camera.hpp; sourceTree = "<group>"; };
+		3A6ACA45A9A9ADDBC4D1BC0503809139 /* objdetect.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = objdetect.hpp; path = ios/include/objdetect.hpp; sourceTree = "<group>"; };
+		3A9F1F46ECA24C05AE969165514AC960 /* core_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = core_c.h; path = ios/include/core/core_c.h; sourceTree = "<group>"; };
+		3AF860C0D2C249A26680274522438B89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3D1B8AE795FE09F923C0142A9D2FCEEC /* dict.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = dict.hpp; path = ios/include/dnn/dict.hpp; sourceTree = "<group>"; };
+		4016296190271E771C149B3FAFAB64D7 /* photo.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = photo.hpp; path = ios/include/photo/photo.hpp; sourceTree = "<group>"; };
+		409C44F696CA9E02DA3B77AD394E58DC /* ml.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ml.hpp; path = ios/include/ml.hpp; sourceTree = "<group>"; };
+		4245248DCE64C19BCE213AD50E96B370 /* hdf5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hdf5.h; path = ios/include/flann/hdf5.h; sourceTree = "<group>"; };
+		429888072B4066A7EA929A18D9E8D6A8 /* distortion_model.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = distortion_model.hpp; path = ios/include/imgproc/detail/distortion_model.hpp; sourceTree = "<group>"; };
+		42D40E2E371E1F8437F6E3FF5A9AC4C4 /* hierarchical_clustering_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hierarchical_clustering_index.h; path = ios/include/flann/hierarchical_clustering_index.h; sourceTree = "<group>"; };
+		433ADE9A2A3400D190C3F873FE98DC63 /* opencv_modules.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = opencv_modules.hpp; path = ios/include/opencv_modules.hpp; sourceTree = "<group>"; };
+		4424EA5096FBB7192E3EDF7B44A51E3E /* vsx_utils.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = vsx_utils.hpp; path = ios/include/core/vsx_utils.hpp; sourceTree = "<group>"; };
+		4570D8492A19F97A64949A7B24923885 /* fast_marching.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = fast_marching.hpp; path = ios/include/videostab/fast_marching.hpp; sourceTree = "<group>"; };
+		464D0843A8E52C20FF4D466129780AD5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4650E81B041C7162D8FE1235845378D7 /* hal.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = hal.hpp; path = ios/include/imgproc/hal/hal.hpp; sourceTree = "<group>"; };
+		46633D2341A0B4215CCD963E6CFCA74E /* OpenCV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = OpenCV.modulemap; sourceTree = "<group>"; };
+		481154E2F0A0FFC2730012A77F87E34F /* fast_math.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = fast_math.hpp; path = ios/include/core/fast_math.hpp; sourceTree = "<group>"; };
+		48CE466025D0ABFAB6A49AAB67C6B38E /* intrin.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = intrin.hpp; path = ios/include/core/hal/intrin.hpp; sourceTree = "<group>"; };
+		4926D41BC5625A51799A340AAD157903 /* Pods_Facify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Facify.framework; path = "Pods-Facify.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AB7D107A9D4CA1C995C615C9F41C8A4 /* motion_stabilizing.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = motion_stabilizing.hpp; path = ios/include/videostab/motion_stabilizing.hpp; sourceTree = "<group>"; };
+		4AFA8A25D4D6B89FFAF8D959128513BC /* imgcodecs_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = imgcodecs_c.h; path = ios/include/imgcodecs/imgcodecs_c.h; sourceTree = "<group>"; };
+		4C39F202BC20B8EC680B5E405160C378 /* object_factory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = object_factory.h; path = ios/include/flann/object_factory.h; sourceTree = "<group>"; };
+		4E6448E3E609454DB935B3600F019AE5 /* Pods-FacifyTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FacifyTests.modulemap"; sourceTree = "<group>"; };
+		4EE11714D5531BC61D4F060E638DFCCA /* warpers_inl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = warpers_inl.hpp; path = ios/include/stitching/detail/warpers_inl.hpp; sourceTree = "<group>"; };
+		5052B2E2DC3B1F17679067EC6DFBBA10 /* cvdef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cvdef.h; path = ios/include/core/cvdef.h; sourceTree = "<group>"; };
+		50745D14EBA76C180D1CD7B4A535E7F9 /* cvstd.inl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = cvstd.inl.hpp; path = ios/include/core/cvstd.inl.hpp; sourceTree = "<group>"; };
+		507D17C1FAF1DEB33D3FB21047B11B6F /* Pods-Facify-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Facify-acknowledgements.markdown"; sourceTree = "<group>"; };
+		510743CFF89AD78F48EE4D7C2B2FC1A7 /* lsh_table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lsh_table.h; path = ios/include/flann/lsh_table.h; sourceTree = "<group>"; };
+		53FC8245D9FA69029E256F00BCC9E169 /* mat.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = mat.hpp; path = ios/include/core/mat.hpp; sourceTree = "<group>"; };
+		5678A10BA044FDB3EE120EC59F3447A8 /* layer.details.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = layer.details.hpp; path = ios/include/dnn/layer.details.hpp; sourceTree = "<group>"; };
+		58D313A4BCE81C75AD06B4490EE16F94 /* Pods-FacifyUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FacifyUITests-frameworks.sh"; sourceTree = "<group>"; };
+		59CDB86CEB55CD576A5F3DB3F9BC0DD6 /* wimage.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = wimage.hpp; path = ios/include/core/wimage.hpp; sourceTree = "<group>"; };
+		5AB2357831BB005B7B0AB6DF2168EA42 /* kdtree_single_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kdtree_single_index.h; path = ios/include/flann/kdtree_single_index.h; sourceTree = "<group>"; };
+		5DB4E1E9EB47115F0DEC5373EA6F0DEE /* shape.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = shape.hpp; path = ios/include/shape.hpp; sourceTree = "<group>"; };
+		629FCCAAF294DEAEF91836EB614CC595 /* core.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = core.hpp; path = ios/include/core.hpp; sourceTree = "<group>"; };
+		62C73826C593FBE6281B12F29A8C0EFB /* trace.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = trace.hpp; path = ios/include/core/utils/trace.hpp; sourceTree = "<group>"; };
+		6589ECB95533AA8164E2AF3755BFF3B3 /* cuda.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = cuda.hpp; path = ios/include/photo/cuda.hpp; sourceTree = "<group>"; };
+		65A1D062376E88BE0CABE631F79E895A /* global_motion.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = global_motion.hpp; path = ios/include/videostab/global_motion.hpp; sourceTree = "<group>"; };
+		65B629C7ADACF32702361E012B7E3071 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		67557C14531B99972531649273B57B05 /* Pods-Facify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Facify.release.xcconfig"; sourceTree = "<group>"; };
+		67761ECF24C0EA16F22023346081A84C /* va_intel.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = va_intel.hpp; path = ios/include/core/va_intel.hpp; sourceTree = "<group>"; };
+		683DD6C0556675B532B22A38B4CC5108 /* logger.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = logger.hpp; path = ios/include/core/utils/logger.hpp; sourceTree = "<group>"; };
+		69A156916273A9A425D4714BD42C1802 /* highgui.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = highgui.hpp; path = ios/include/highgui/highgui.hpp; sourceTree = "<group>"; };
+		6CC883D5C06E705409265CAFBA75E741 /* saving.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = saving.h; path = ios/include/flann/saving.h; sourceTree = "<group>"; };
+		6CC8FF4791442A1A344B73E5BE124DEF /* ovx.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ovx.hpp; path = ios/include/core/ovx.hpp; sourceTree = "<group>"; };
+		6CEA482D64B545FC0637832B0401575E /* imgproc.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = imgproc.hpp; path = ios/include/imgproc/imgproc.hpp; sourceTree = "<group>"; };
+		6E36E3B7A75CE2022E27A2B0A8D1F3B6 /* ml.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ml.hpp; path = ios/include/ml/ml.hpp; sourceTree = "<group>"; };
+		703CD599CAE11725FC8E6F0E45C2C436 /* ground_truth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ground_truth.h; path = ios/include/flann/ground_truth.h; sourceTree = "<group>"; };
+		70A0CAC174D7237B691B146124214325 /* OpenCV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OpenCV-umbrella.h"; sourceTree = "<group>"; };
+		71DAECAF406191A6BB18D68400D6492B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		720448E9CF76E680677ABF8E2D16310F /* tracking_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tracking_c.h; path = ios/include/video/tracking_c.h; sourceTree = "<group>"; };
+		720D78F50BF4DF189F4F92E7B41CC3D1 /* world.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = world.hpp; path = ios/include/world.hpp; sourceTree = "<group>"; };
+		731FF8AE65F441A87D8A572FFF2E31BE /* highgui_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = highgui_c.h; path = ios/include/highgui/highgui_c.h; sourceTree = "<group>"; };
+		73C9BAF243CCAF975AE33D42563C9C42 /* cv_cpu_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cv_cpu_helper.h; path = ios/include/core/cv_cpu_helper.h; sourceTree = "<group>"; };
+		7646910B15BA22998EF72EF23A24C38C /* hist_cost.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = hist_cost.hpp; path = ios/include/shape/hist_cost.hpp; sourceTree = "<group>"; };
+		76FDD74659D5B34665FE76FBAB01518F /* cap_ios.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cap_ios.h; path = ios/include/videoio/cap_ios.h; sourceTree = "<group>"; };
+		7AF00972376E49412E603767033C98AA /* opengl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = opengl.hpp; path = ios/include/core/opengl.hpp; sourceTree = "<group>"; };
+		7DFA1A7C4DB8FA3AE058E54C65625126 /* dist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dist.h; path = ios/include/flann/dist.h; sourceTree = "<group>"; };
+		7F86E993E8A62A8366DCB64333DBFE44 /* types_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = types_c.h; path = ios/include/core/types_c.h; sourceTree = "<group>"; };
+		80D0297D06758AE97E9B73DE48821C58 /* Pods_FacifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FacifyTests.framework; path = "Pods-FacifyTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8176B8B471027706B747A92722B5F59E /* mat.inl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = mat.inl.hpp; path = ios/include/core/mat.inl.hpp; sourceTree = "<group>"; };
+		81C7416700E2C74C4832A064C3EB6941 /* kdtree_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kdtree_index.h; path = ios/include/flann/kdtree_index.h; sourceTree = "<group>"; };
+		8237164AD9D323C385404A6F56333402 /* optical_flow.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = optical_flow.hpp; path = ios/include/videostab/optical_flow.hpp; sourceTree = "<group>"; };
+		8295C724CC26EC53BF6505794CC0D3E2 /* videoio.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = videoio.hpp; path = ios/include/videoio/videoio.hpp; sourceTree = "<group>"; };
+		8353EB9101AF9E0D0AAF6D09945DFCAC /* cuda_types.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = cuda_types.hpp; path = ios/include/core/cuda_types.hpp; sourceTree = "<group>"; };
+		83C7111B814FBD8806DCCD113BD146B0 /* shape_distance.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = shape_distance.hpp; path = ios/include/shape/shape_distance.hpp; sourceTree = "<group>"; };
+		8505CFC760072458958F7255829F5380 /* cvconfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cvconfig.h; path = ios/include/cvconfig.h; sourceTree = "<group>"; };
+		867FF5F57F51E3E76E03E782181E2616 /* calib3d_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = calib3d_c.h; path = ios/include/calib3d/calib3d_c.h; sourceTree = "<group>"; };
+		87040658D5A3AA3CD53256F6B21872F7 /* Pods-FacifyTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FacifyTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		87301CC5C0CF7E469BB4D05AF2C01B4A /* bufferpool.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = bufferpool.hpp; path = ios/include/core/bufferpool.hpp; sourceTree = "<group>"; };
+		887B0F3AA882C9B9C728CB66B6D078FE /* core.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = core.hpp; path = ios/include/core/core.hpp; sourceTree = "<group>"; };
+		88ABCED2D1AB22526C8F89C581DC6F56 /* cvstd.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = cvstd.hpp; path = ios/include/core/cvstd.hpp; sourceTree = "<group>"; };
+		89097CBC80840086DF224E8CEEA44D92 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
+		8AA6C969AFAD10CFA416AF0BFA212F2A /* flann_base.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = flann_base.hpp; path = ios/include/flann/flann_base.hpp; sourceTree = "<group>"; };
+		8D0F952886D152FC8FF6D6F99718811E /* autocalib.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = autocalib.hpp; path = ios/include/stitching/detail/autocalib.hpp; sourceTree = "<group>"; };
+		8E50E1908F7F569B61A6544AEB042E25 /* types.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = types.hpp; path = ios/include/core/types.hpp; sourceTree = "<group>"; };
+		8EF3E15B39129EFB32C2C17B9C4EAD79 /* exposure_compensate.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = exposure_compensate.hpp; path = ios/include/stitching/detail/exposure_compensate.hpp; sourceTree = "<group>"; };
+		8FFC37E2D62785CC4938F62000F4D275 /* calib3d.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = calib3d.hpp; path = ios/include/calib3d.hpp; sourceTree = "<group>"; };
+		90238294BCF2C6461A505AC24B4CD6FA /* ios.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ios.h; path = ios/include/imgcodecs/ios.h; sourceTree = "<group>"; };
+		922B6F1E606E72734AC156E46195D08E /* sse_utils.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = sse_utils.hpp; path = ios/include/core/sse_utils.hpp; sourceTree = "<group>"; };
+		92F854066504746A3C6F24A68B8B023A /* interface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = interface.h; path = ios/include/core/hal/interface.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9541480778CE3D5AF4A764B055C3DE29 /* Pods-FacifyUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FacifyUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		976BE07193CA088BA55350660994D980 /* cuda.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = cuda.hpp; path = ios/include/core/cuda.hpp; sourceTree = "<group>"; };
+		977E7BCBDA27F55798B4D94FBA1D51C1 /* Pods-Facify.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Facify.modulemap"; sourceTree = "<group>"; };
+		97D295F2D63FE91A04BABF706B542433 /* Pods-FacifyTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FacifyTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		97DD2F3DCE30CC91C04D629B64DAF580 /* imgcodecs.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = imgcodecs.hpp; path = ios/include/imgcodecs.hpp; sourceTree = "<group>"; };
+		98080A3D1BBB6745D1EF920CE6BE3627 /* composite_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = composite_index.h; path = ios/include/flann/composite_index.h; sourceTree = "<group>"; };
+		990EA3B5B57C270CC819F1D0CD8B0956 /* wobble_suppression.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = wobble_suppression.hpp; path = ios/include/videostab/wobble_suppression.hpp; sourceTree = "<group>"; };
+		99E9D84F4DD61226502E7F72214C6FE1 /* warpers.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = warpers.hpp; path = ios/include/stitching/warpers.hpp; sourceTree = "<group>"; };
+		9A44D87FF28184D49C5B8AF80CB48E1B /* Pods-Facify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Facify.debug.xcconfig"; sourceTree = "<group>"; };
+		9DC52626078F1F733BDDDB97CC6CF8D2 /* log.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = log.hpp; path = ios/include/videostab/log.hpp; sourceTree = "<group>"; };
+		9E02E1E980D015A4CF6D4362DEA85854 /* features2d.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = features2d.hpp; path = ios/include/features2d/features2d.hpp; sourceTree = "<group>"; };
+		9E5A202E27F8FA09DEE0D239FE64E8B5 /* autotuned_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = autotuned_index.h; path = ios/include/flann/autotuned_index.h; sourceTree = "<group>"; };
+		9EB700C1DFE8996E22F103006E35BC48 /* Pods-FacifyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FacifyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F238DA5435302695250D8412A16C7C7 /* videostab.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = videostab.hpp; path = ios/include/videostab.hpp; sourceTree = "<group>"; };
+		9F68206D789C3FE87284DD4C3FC48728 /* libopencv2Static.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libopencv2Static.a; path = ios/libopencv2Static.a; sourceTree = "<group>"; };
+		A10C1FFD1E57EDD3E3758494E73C3293 /* ippasync.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ippasync.hpp; path = ios/include/core/ippasync.hpp; sourceTree = "<group>"; };
+		A1DC15EEBD0F35E2929EDE61A73C0088 /* Pods-FacifyTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FacifyTests-frameworks.sh"; sourceTree = "<group>"; };
+		A5CAAA081028C4D8E7D48924927316D1 /* videoio_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = videoio_c.h; path = ios/include/videoio/videoio_c.h; sourceTree = "<group>"; };
+		A60CA98DAC14C82A071D52CF707D1B92 /* Pods-FacifyTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FacifyTests-resources.sh"; sourceTree = "<group>"; };
+		A8B060D33DB89C61EBF0DA22B25B79A0 /* OpenCV-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OpenCV-prefix.pch"; sourceTree = "<group>"; };
+		AB5E87C7AAEA08473A1DCF72AA73FDE7 /* cv_cpu_dispatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cv_cpu_dispatch.h; path = ios/include/core/cv_cpu_dispatch.h; sourceTree = "<group>"; };
+		AB7C5E17DA6FD541D7341808AFC9B606 /* objdetect.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = objdetect.hpp; path = ios/include/objdetect/objdetect.hpp; sourceTree = "<group>"; };
+		AC72FD6C46D320CD0FDDC9E0D03EC90C /* outlier_rejection.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = outlier_rejection.hpp; path = ios/include/videostab/outlier_rejection.hpp; sourceTree = "<group>"; };
+		AC96132EBF1290DC177D657F9C66F187 /* imgproc_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = imgproc_c.h; path = ios/include/imgproc/imgproc_c.h; sourceTree = "<group>"; };
+		B2A6417A482EA42B83B0B7DAC168BFA3 /* optim.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = optim.hpp; path = ios/include/core/optim.hpp; sourceTree = "<group>"; };
+		B2F6C3EA1CB82D55B61BBE83BD95837F /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = ios/include/flann/config.h; sourceTree = "<group>"; };
+		B367DB339F7F608459B1F16BBB098637 /* index_testing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = index_testing.h; path = ios/include/flann/index_testing.h; sourceTree = "<group>"; };
+		B3A56399A841388C7DBD455C3E3F5099 /* highgui.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = highgui.hpp; path = ios/include/highgui.hpp; sourceTree = "<group>"; };
+		B432FE473546BA8B90BE9E3CC2CA3956 /* flann.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = flann.hpp; path = ios/include/flann/flann.hpp; sourceTree = "<group>"; };
+		B579E1FC3B47AA1FB6D5046F3F5EE8E2 /* imgcodecs.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = imgcodecs.hpp; path = ios/include/imgcodecs/imgcodecs.hpp; sourceTree = "<group>"; };
+		B58700665180DF237768E27D47287622 /* opencv2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = opencv2.framework; path = OpenCV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6352210733819FCE235B59BA3020A8E /* photo.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = photo.hpp; path = ios/include/photo.hpp; sourceTree = "<group>"; };
+		B71DBA0EBAD21C5E888F63CE951EAE57 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8779C2E016A033226E21F7041EB6245 /* cuda_stream_accessor.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = cuda_stream_accessor.hpp; path = ios/include/core/cuda_stream_accessor.hpp; sourceTree = "<group>"; };
+		BA5D8548A07AAAFD07194AF78C72F675 /* matchers.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = matchers.hpp; path = ios/include/stitching/detail/matchers.hpp; sourceTree = "<group>"; };
+		BD45F68E01B3FC6034312DA39C2CC9A7 /* Pods-FacifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FacifyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD4A22B39A067ADC807E88DD716A724D /* util_inl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = util_inl.hpp; path = ios/include/stitching/detail/util_inl.hpp; sourceTree = "<group>"; };
+		BF1A767F0DCA82EDF4A7572C45072CBA /* lsh_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lsh_index.h; path = ios/include/flann/lsh_index.h; sourceTree = "<group>"; };
+		C0DB17117F6BEEA544005F21CC039749 /* Pods-Facify-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Facify-dummy.m"; sourceTree = "<group>"; };
+		C2D21593708345A47CCF81A21436742A /* emdL1.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = emdL1.hpp; path = ios/include/shape/emdL1.hpp; sourceTree = "<group>"; };
+		C313E6B7AB5B2E8B8057D4652BC46B8B /* logger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = logger.h; path = ios/include/flann/logger.h; sourceTree = "<group>"; };
+		C3BBEAA0F06780B4E1418CEB2CFD7594 /* Pods-Facify-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Facify-frameworks.sh"; sourceTree = "<group>"; };
+		C6B7F729E7A40848F2CB806D7471724E /* video.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = video.hpp; path = ios/include/video.hpp; sourceTree = "<group>"; };
+		C7A4A75477F7246150DF4CBE712F913C /* ptr.inl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ptr.inl.hpp; path = ios/include/core/ptr.inl.hpp; sourceTree = "<group>"; };
+		C9CEED914014F99C85778D8A13D3AE3B /* saturate.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = saturate.hpp; path = ios/include/core/saturate.hpp; sourceTree = "<group>"; };
+		CA63223D59DC3C750A9C1423A3E2ABC2 /* stabilizer.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = stabilizer.hpp; path = ios/include/videostab/stabilizer.hpp; sourceTree = "<group>"; };
+		CB5758ECB9A8CF961CA3677B2AB887DE /* util.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = util.hpp; path = ios/include/stitching/detail/util.hpp; sourceTree = "<group>"; };
+		CC28814307FC8C87AE9CE88FA3EAE30D /* eigen.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = eigen.hpp; path = ios/include/core/eigen.hpp; sourceTree = "<group>"; };
+		CEFCFF26D2B4F04079BB588B422A0895 /* utility.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = utility.hpp; path = ios/include/core/utility.hpp; sourceTree = "<group>"; };
+		CF0330CAC47B04F5F29655499961B34C /* videoio.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = videoio.hpp; path = ios/include/videoio.hpp; sourceTree = "<group>"; };
+		CF58C86B8C79665FA952EB16B8A08161 /* allocator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = allocator.h; path = ios/include/flann/allocator.h; sourceTree = "<group>"; };
+		D12A0C580F61D0DBAF412440D49546F5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		D2CB824AEB18B73E1752F1D09D348DDD /* imgproc.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = imgproc.hpp; path = ios/include/imgproc.hpp; sourceTree = "<group>"; };
+		D4483426E2FE45A5D6A85557836B6120 /* cuda.inl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = cuda.inl.hpp; path = ios/include/core/cuda.inl.hpp; sourceTree = "<group>"; };
+		D51FC0FCE4BABBD479736EFCB61ADFEC /* Pods-FacifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FacifyTests.release.xcconfig"; sourceTree = "<group>"; };
+		D550015E78920A6A971514C4A8B311DA /* sampling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sampling.h; path = ios/include/flann/sampling.h; sourceTree = "<group>"; };
+		D7527ABFDAA958F9385CC420480E41BD /* Pods-Facify-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Facify-umbrella.h"; sourceTree = "<group>"; };
+		D7641B3EB6F7781E444BBFFD65C9E4A2 /* deblurring.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = deblurring.hpp; path = ios/include/videostab/deblurring.hpp; sourceTree = "<group>"; };
+		D7BF5738B9AE82F31FCA704F75DC88EA /* timelapsers.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = timelapsers.hpp; path = ios/include/stitching/detail/timelapsers.hpp; sourceTree = "<group>"; };
+		D86CF3F57C94BA804DD5A9D7437AF081 /* all_indices.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = all_indices.h; path = ios/include/flann/all_indices.h; sourceTree = "<group>"; };
+		DC343A4FAE935BE1D69F93AEA79E3CAE /* video.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = video.hpp; path = ios/include/video/video.hpp; sourceTree = "<group>"; };
+		E46A1AF06C54A0D7118B3C5707AB2FBC /* timer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = timer.h; path = ios/include/flann/timer.h; sourceTree = "<group>"; };
+		EA5204F028B67A1D7E6B24DC312A7811 /* opencv.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = opencv.hpp; path = ios/include/opencv.hpp; sourceTree = "<group>"; };
+		EB3AA50C556C9AAB506801182D8769A1 /* general.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = general.h; path = ios/include/flann/general.h; sourceTree = "<group>"; };
+		ED969DD4630CBFAF848B1872B9637008 /* hal.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = hal.hpp; path = ios/include/core/hal/hal.hpp; sourceTree = "<group>"; };
+		EF6081D8BFB4F4C52D4DAE83A917A5D0 /* Pods-FacifyUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FacifyUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EF708DCE7EC52A292089C5166F961DBE /* Pods-FacifyTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FacifyTests-umbrella.h"; sourceTree = "<group>"; };
+		EF872B01AE476D08C425AF1F36EA12B3 /* Pods-Facify-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Facify-resources.sh"; sourceTree = "<group>"; };
+		F00888660DBE7A2CFB49D75B36F83418 /* operations.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = operations.hpp; path = ios/include/core/operations.hpp; sourceTree = "<group>"; };
+		F0E7C9C4522C642E53EBF30DEEE88B73 /* Pods-FacifyUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FacifyUITests.modulemap"; sourceTree = "<group>"; };
+		F209D65DA5F257E1D8898C06DD5FDA7B /* types_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = types_c.h; path = ios/include/imgproc/types_c.h; sourceTree = "<group>"; };
+		F2C229D76D8B8A364962CF459A229757 /* softfloat.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = softfloat.hpp; path = ios/include/core/softfloat.hpp; sourceTree = "<group>"; };
+		F561F56AE5AC3179BB7C587606269393 /* flann.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = flann.hpp; path = ios/include/flann.hpp; sourceTree = "<group>"; };
+		F6EEDDEB455AC967C909282FE2E30FFB /* linear_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = linear_index.h; path = ios/include/flann/linear_index.h; sourceTree = "<group>"; };
+		F737742F904C18B79D7558A87F1731E8 /* result_set.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = result_set.h; path = ios/include/flann/result_set.h; sourceTree = "<group>"; };
+		F7597CED489F426D8FA2C7E457921134 /* neon_utils.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = neon_utils.hpp; path = ios/include/core/neon_utils.hpp; sourceTree = "<group>"; };
+		F82CF1D4F752EFE7AABEDB39BCB97FA4 /* shape_utils.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = shape_utils.hpp; path = ios/include/dnn/shape_utils.hpp; sourceTree = "<group>"; };
+		F8B9DC1081308F7DEC6CA9A6594C21D3 /* ocl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ocl.hpp; path = ios/include/core/ocl.hpp; sourceTree = "<group>"; };
+		F97685D7BB1ED1ABC2B4902E3B7B219A /* tracking.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = tracking.hpp; path = ios/include/video/tracking.hpp; sourceTree = "<group>"; };
+		F9E5154CEAFC91AED7858C793EF77F2B /* background_segm.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = background_segm.hpp; path = ios/include/video/background_segm.hpp; sourceTree = "<group>"; };
+		FA1F2F1864511AEEB0FFF51FD47D3393 /* motion_core.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = motion_core.hpp; path = ios/include/videostab/motion_core.hpp; sourceTree = "<group>"; };
+		FA85174A839E6A9ED97E6CC1C8877747 /* stitching.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = stitching.hpp; path = ios/include/stitching.hpp; sourceTree = "<group>"; };
+		FB983F082561F61CF68FE0B86B0FB843 /* OpenCV.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OpenCV.xcconfig; sourceTree = "<group>"; };
+		FBB698D673245663222C554057FE1AD2 /* shape.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = shape.hpp; path = ios/include/shape/shape.hpp; sourceTree = "<group>"; };
+		FF1948DCC4DE9C395E017E38178E4E3C /* Pods_FacifyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FacifyUITests.framework; path = "Pods-FacifyUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFECAB882AAE8514EEA102A5A32B314E /* matrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = matrix.h; path = ios/include/flann/matrix.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		686A66FC10223E686434699971F96DD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D83438E8FF180D732CA5268DD228692 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7FB6DFE34A8839387BE5E495D8782F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1B668ECE7631B14C8191868BEE8610 /* AssetsLibrary.framework in Frameworks */,
+				33513B79B6CCA3472B5CCBDA8D028254 /* AVFoundation.framework in Frameworks */,
+				8B496CB8A30511B6339109B1129E3215 /* CoreGraphics.framework in Frameworks */,
+				976A2AE3699A5EEDE840A4F426BE93E5 /* CoreMedia.framework in Frameworks */,
+				C988B7025CE5D560D24EF4C483222B26 /* CoreVideo.framework in Frameworks */,
+				A0D84A72F5100092933FA4C9722C18B5 /* Foundation.framework in Frameworks */,
+				B0CD4386CE5B9CBC4AF64B4E45A49842 /* QuartzCore.framework in Frameworks */,
+				68AFEEEDC35A188B286A806FB486A665 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B790515C23B06DAA9C0F7100FFF28168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C04E4ED9AB3067E224D33A66EF5B458 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BECA80D6E8D5BFADC8356766B76FA46C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5246FBA3DA8B3B731838E23F17A329E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43A9EB3FF5732B175AEBB9F8EB8182FC /* Pods-FacifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				464D0843A8E52C20FF4D466129780AD5 /* Info.plist */,
+				4E6448E3E609454DB935B3600F019AE5 /* Pods-FacifyTests.modulemap */,
+				87040658D5A3AA3CD53256F6B21872F7 /* Pods-FacifyTests-acknowledgements.markdown */,
+				97D295F2D63FE91A04BABF706B542433 /* Pods-FacifyTests-acknowledgements.plist */,
+				07B3679913C94030205132CD62164324 /* Pods-FacifyTests-dummy.m */,
+				A1DC15EEBD0F35E2929EDE61A73C0088 /* Pods-FacifyTests-frameworks.sh */,
+				A60CA98DAC14C82A071D52CF707D1B92 /* Pods-FacifyTests-resources.sh */,
+				EF708DCE7EC52A292089C5166F961DBE /* Pods-FacifyTests-umbrella.h */,
+				BD45F68E01B3FC6034312DA39C2CC9A7 /* Pods-FacifyTests.debug.xcconfig */,
+				D51FC0FCE4BABBD479736EFCB61ADFEC /* Pods-FacifyTests.release.xcconfig */,
+			);
+			name = "Pods-FacifyTests";
+			path = "Target Support Files/Pods-FacifyTests";
+			sourceTree = "<group>";
+		};
+		6D9291D488F2210BE463B49BCDED31E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B58700665180DF237768E27D47287622 /* opencv2.framework */,
+				4926D41BC5625A51799A340AAD157903 /* Pods_Facify.framework */,
+				80D0297D06758AE97E9B73DE48821C58 /* Pods_FacifyTests.framework */,
+				FF1948DCC4DE9C395E017E38178E4E3C /* Pods_FacifyUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		769953A662E0C221FC5C39900725D313 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D2B849E9849E2D85587E547284E30BC /* Pods-Facify */,
+				43A9EB3FF5732B175AEBB9F8EB8182FC /* Pods-FacifyTests */,
+				C1E9D2082D6C0FD33236CBD8AEDE471E /* Pods-FacifyUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		785553737B06AFC3DA711DDEB7D56194 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8407BA5C5410B3B97B17A450F56A8474 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D2B849E9849E2D85587E547284E30BC /* Pods-Facify */ = {
+			isa = PBXGroup;
+			children = (
+				71DAECAF406191A6BB18D68400D6492B /* Info.plist */,
+				977E7BCBDA27F55798B4D94FBA1D51C1 /* Pods-Facify.modulemap */,
+				507D17C1FAF1DEB33D3FB21047B11B6F /* Pods-Facify-acknowledgements.markdown */,
+				2CC6C9BD245036E98FF0ECC1A63F9212 /* Pods-Facify-acknowledgements.plist */,
+				C0DB17117F6BEEA544005F21CC039749 /* Pods-Facify-dummy.m */,
+				C3BBEAA0F06780B4E1418CEB2CFD7594 /* Pods-Facify-frameworks.sh */,
+				EF872B01AE476D08C425AF1F36EA12B3 /* Pods-Facify-resources.sh */,
+				D7527ABFDAA958F9385CC420480E41BD /* Pods-Facify-umbrella.h */,
+				9A44D87FF28184D49C5B8AF80CB48E1B /* Pods-Facify.debug.xcconfig */,
+				67557C14531B99972531649273B57B05 /* Pods-Facify.release.xcconfig */,
+			);
+			name = "Pods-Facify";
+			path = "Target Support Files/Pods-Facify";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				785553737B06AFC3DA711DDEB7D56194 /* Frameworks */,
+				80356741CF86F8E0D25DDB090A305E0C /* Pods */,
+				6D9291D488F2210BE463B49BCDED31E0 /* Products */,
+				769953A662E0C221FC5C39900725D313 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80356741CF86F8E0D25DDB090A305E0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C7DCEC4659EA5238B08EFAC0EFB52BA /* OpenCV */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8407BA5C5410B3B97B17A450F56A8474 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				227097DAAF604A4048A5A75D2780A1E6 /* AssetsLibrary.framework */,
+				D12A0C580F61D0DBAF412440D49546F5 /* AVFoundation.framework */,
+				04D56CEB452F703D306ED5BE80CEF641 /* CoreGraphics.framework */,
+				03263BB27219DC2EA2E3B17D42AD439F /* CoreMedia.framework */,
+				89097CBC80840086DF224E8CEEA44D92 /* CoreVideo.framework */,
+				3AF860C0D2C249A26680274522438B89 /* Foundation.framework */,
+				342D5F9595253BA98E5EA40A3D21683A /* QuartzCore.framework */,
+				65B629C7ADACF32702361E012B7E3071 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9C7DCEC4659EA5238B08EFAC0EFB52BA /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				2DFBA73B4C9AA223348A81CFB4294DF5 /* affine.hpp */,
+				D86CF3F57C94BA804DD5A9D7437AF081 /* all_indices.h */,
+				1565C670F07F2D6A0BEC028DF6CFCD91 /* all_layers.hpp */,
+				CF58C86B8C79665FA952EB16B8A08161 /* allocator.h */,
+				2671D608A7C9BE40F1D3BA70D8F98FF0 /* any.h */,
+				8D0F952886D152FC8FF6D6F99718811E /* autocalib.hpp */,
+				9E5A202E27F8FA09DEE0D239FE64E8B5 /* autotuned_index.h */,
+				F9E5154CEAFC91AED7858C793EF77F2B /* background_segm.hpp */,
+				32FA881303C9C33E2FAE56DBA9687448 /* base.hpp */,
+				0771713B6F6845906E3D5E0F450630E9 /* blenders.hpp */,
+				87301CC5C0CF7E469BB4D05AF2C01B4A /* bufferpool.hpp */,
+				18CF848789CE62E5BAC0120BFF060FD8 /* calib3d.hpp */,
+				8FFC37E2D62785CC4938F62000F4D275 /* calib3d.hpp */,
+				867FF5F57F51E3E76E03E782181E2616 /* calib3d_c.h */,
+				374ED351167FB8A155AD22138F2BA76E /* camera.hpp */,
+				76FDD74659D5B34665FE76FBAB01518F /* cap_ios.h */,
+				98080A3D1BBB6745D1EF920CE6BE3627 /* composite_index.h */,
+				B2F6C3EA1CB82D55B61BBE83BD95837F /* config.h */,
+				629FCCAAF294DEAEF91836EB614CC595 /* core.hpp */,
+				887B0F3AA882C9B9C728CB66B6D078FE /* core.hpp */,
+				3A9F1F46ECA24C05AE969165514AC960 /* core_c.h */,
+				6589ECB95533AA8164E2AF3755BFF3B3 /* cuda.hpp */,
+				976BE07193CA088BA55350660994D980 /* cuda.hpp */,
+				D4483426E2FE45A5D6A85557836B6120 /* cuda.inl.hpp */,
+				B8779C2E016A033226E21F7041EB6245 /* cuda_stream_accessor.hpp */,
+				8353EB9101AF9E0D0AAF6D09945DFCAC /* cuda_types.hpp */,
+				AB5E87C7AAEA08473A1DCF72AA73FDE7 /* cv_cpu_dispatch.h */,
+				73C9BAF243CCAF975AE33D42563C9C42 /* cv_cpu_helper.h */,
+				8505CFC760072458958F7255829F5380 /* cvconfig.h */,
+				5052B2E2DC3B1F17679067EC6DFBBA10 /* cvdef.h */,
+				88ABCED2D1AB22526C8F89C581DC6F56 /* cvstd.hpp */,
+				50745D14EBA76C180D1CD7B4A535E7F9 /* cvstd.inl.hpp */,
+				D7641B3EB6F7781E444BBFFD65C9E4A2 /* deblurring.hpp */,
+				0407E843D1C45F446C19C53A3DD43275 /* defines.h */,
+				1A87B2363D744A6CABA0ED5AF74CC4C7 /* detection_based_tracker.hpp */,
+				3D1B8AE795FE09F923C0142A9D2FCEEC /* dict.hpp */,
+				307251697914931CE54692E79028BD77 /* directx.hpp */,
+				7DFA1A7C4DB8FA3AE058E54C65625126 /* dist.h */,
+				429888072B4066A7EA929A18D9E8D6A8 /* distortion_model.hpp */,
+				0923490D59ED8ADDACB3E32B5A8A03A7 /* dnn.hpp */,
+				0C723D1D0D677DB0A40545D3E15E12A8 /* dnn.hpp */,
+				2BDD7A4937D81D1F96E97EBE70D3B920 /* dnn.inl.hpp */,
+				0859373D08607471A542ED487D10E7A5 /* dummy.h */,
+				2456C62970AC93BF0369918924006A34 /* dynamic_bitset.h */,
+				CC28814307FC8C87AE9CE88FA3EAE30D /* eigen.hpp */,
+				C2D21593708345A47CCF81A21436742A /* emdL1.hpp */,
+				0A111D97DE89DD80C5090965054AEFCA /* Empty.m */,
+				8EF3E15B39129EFB32C2C17B9C4EAD79 /* exposure_compensate.hpp */,
+				4570D8492A19F97A64949A7B24923885 /* fast_marching.hpp */,
+				0A52D391C9C2E75FA749FC5AE8150565 /* fast_marching_inl.hpp */,
+				481154E2F0A0FFC2730012A77F87E34F /* fast_math.hpp */,
+				1FEFEC7CF1DF27E91981139640860BD1 /* features2d.hpp */,
+				9E02E1E980D015A4CF6D4362DEA85854 /* features2d.hpp */,
+				B432FE473546BA8B90BE9E3CC2CA3956 /* flann.hpp */,
+				F561F56AE5AC3179BB7C587606269393 /* flann.hpp */,
+				8AA6C969AFAD10CFA416AF0BFA212F2A /* flann_base.hpp */,
+				1FC6264343C826E14FCEBB29691D8FEB /* frame_source.hpp */,
+				EB3AA50C556C9AAB506801182D8769A1 /* general.h */,
+				65A1D062376E88BE0CABE631F79E895A /* global_motion.hpp */,
+				703CD599CAE11725FC8E6F0E45C2C436 /* ground_truth.h */,
+				ED969DD4630CBFAF848B1872B9637008 /* hal.hpp */,
+				4650E81B041C7162D8FE1235845378D7 /* hal.hpp */,
+				4245248DCE64C19BCE213AD50E96B370 /* hdf5.h */,
+				2BF6874BA2056E6AA372421896045F61 /* heap.h */,
+				42D40E2E371E1F8437F6E3FF5A9AC4C4 /* hierarchical_clustering_index.h */,
+				69A156916273A9A425D4714BD42C1802 /* highgui.hpp */,
+				B3A56399A841388C7DBD455C3E3F5099 /* highgui.hpp */,
+				731FF8AE65F441A87D8A572FFF2E31BE /* highgui_c.h */,
+				7646910B15BA22998EF72EF23A24C38C /* hist_cost.hpp */,
+				B579E1FC3B47AA1FB6D5046F3F5EE8E2 /* imgcodecs.hpp */,
+				97DD2F3DCE30CC91C04D629B64DAF580 /* imgcodecs.hpp */,
+				4AFA8A25D4D6B89FFAF8D959128513BC /* imgcodecs_c.h */,
+				D2CB824AEB18B73E1752F1D09D348DDD /* imgproc.hpp */,
+				6CEA482D64B545FC0637832B0401575E /* imgproc.hpp */,
+				AC96132EBF1290DC177D657F9C66F187 /* imgproc_c.h */,
+				B367DB339F7F608459B1F16BBB098637 /* index_testing.h */,
+				0C8B05D05B932E50136D7D17B7A65372 /* inpainting.hpp */,
+				23AEFAF96527A939FC65CA7791C58DA0 /* interface.h */,
+				92F854066504746A3C6F24A68B8B023A /* interface.h */,
+				48CE466025D0ABFAB6A49AAB67C6B38E /* intrin.hpp */,
+				101FA867B5A41D66E74F931F4646E62E /* intrin_cpp.hpp */,
+				29C2E58AEFA5DBF4BDA2780E46A95264 /* intrin_neon.hpp */,
+				19C84CCD2B3FEC1BDD754418790C6F50 /* intrin_sse.hpp */,
+				32AE690BFB5528CD1E5AF2C32260A57C /* intrin_vsx.hpp */,
+				90238294BCF2C6461A505AC24B4CD6FA /* ios.h */,
+				A10C1FFD1E57EDD3E3758494E73C3293 /* ippasync.hpp */,
+				81C7416700E2C74C4832A064C3EB6941 /* kdtree_index.h */,
+				5AB2357831BB005B7B0AB6DF2168EA42 /* kdtree_single_index.h */,
+				33D959246AF429B191CA1EB1972FAF7D /* kmeans_index.h */,
+				26E6593A1311FF97CA839E66CB05C34F /* layer.hpp */,
+				5678A10BA044FDB3EE120EC59F3447A8 /* layer.details.hpp */,
+				F6EEDDEB455AC967C909282FE2E30FFB /* linear_index.h */,
+				9DC52626078F1F733BDDDB97CC6CF8D2 /* log.hpp */,
+				C313E6B7AB5B2E8B8057D4652BC46B8B /* logger.h */,
+				683DD6C0556675B532B22A38B4CC5108 /* logger.hpp */,
+				BF1A767F0DCA82EDF4A7572C45072CBA /* lsh_index.h */,
+				510743CFF89AD78F48EE4D7C2B2FC1A7 /* lsh_table.h */,
+				53FC8245D9FA69029E256F00BCC9E169 /* mat.hpp */,
+				8176B8B471027706B747A92722B5F59E /* mat.inl.hpp */,
+				BA5D8548A07AAAFD07194AF78C72F675 /* matchers.hpp */,
+				FFECAB882AAE8514EEA102A5A32B314E /* matrix.h */,
+				332A8717A2DD102D64AD59DF0267A27C /* matx.hpp */,
+				25F2A151600DD17DD0DD618BD6EC7470 /* miniflann.hpp */,
+				6E36E3B7A75CE2022E27A2B0A8D1F3B6 /* ml.hpp */,
+				409C44F696CA9E02DA3B77AD394E58DC /* ml.hpp */,
+				FA1F2F1864511AEEB0FFF51FD47D3393 /* motion_core.hpp */,
+				14E98BE8EA60837754FCEC75C0FFE9CF /* motion_estimators.hpp */,
+				4AB7D107A9D4CA1C995C615C9F41C8A4 /* motion_stabilizing.hpp */,
+				F7597CED489F426D8FA2C7E457921134 /* neon_utils.hpp */,
+				325183DE4B163E0C61D3EBD64C1D0132 /* nn_index.h */,
+				3A6ACA45A9A9ADDBC4D1BC0503809139 /* objdetect.hpp */,
+				AB7C5E17DA6FD541D7341808AFC9B606 /* objdetect.hpp */,
+				20D65603661ABFCEF39FA4B746F3B842 /* objdetect_c.h */,
+				4C39F202BC20B8EC680B5E405160C378 /* object_factory.h */,
+				F8B9DC1081308F7DEC6CA9A6594C21D3 /* ocl.hpp */,
+				1F57EC9D072477B9E4783E54AE44DA47 /* ocl_genbase.hpp */,
+				EA5204F028B67A1D7E6B24DC312A7811 /* opencv.hpp */,
+				433ADE9A2A3400D190C3F873FE98DC63 /* opencv_modules.hpp */,
+				7AF00972376E49412E603767033C98AA /* opengl.hpp */,
+				F00888660DBE7A2CFB49D75B36F83418 /* operations.hpp */,
+				8237164AD9D323C385404A6F56333402 /* optical_flow.hpp */,
+				B2A6417A482EA42B83B0B7DAC168BFA3 /* optim.hpp */,
+				AC72FD6C46D320CD0FDDC9E0D03EC90C /* outlier_rejection.hpp */,
+				6CC8FF4791442A1A344B73E5BE124DEF /* ovx.hpp */,
+				305C8DDE61FAAEAFD744D9AB671335A0 /* params.h */,
+				23D3FECCE939C34E1A3340B385A4A926 /* persistence.hpp */,
+				B6352210733819FCE235B59BA3020A8E /* photo.hpp */,
+				4016296190271E771C149B3FAFAB64D7 /* photo.hpp */,
+				35AFA6BFBD2D80A9268FC886234A7F5D /* photo_c.h */,
+				C7A4A75477F7246150DF4CBE712F913C /* ptr.inl.hpp */,
+				15952EDADD48032D3621CDC31E4EFFCE /* random.h */,
+				F737742F904C18B79D7558A87F1731E8 /* result_set.h */,
+				156BE904DAF73C8833B70E1779B4B6AB /* ring_buffer.hpp */,
+				D550015E78920A6A971514C4A8B311DA /* sampling.h */,
+				C9CEED914014F99C85778D8A13D3AE3B /* saturate.hpp */,
+				6CC883D5C06E705409265CAFBA75E741 /* saving.h */,
+				3733400897AEC0995BBD56EE53E7BDA2 /* seam_finders.hpp */,
+				FBB698D673245663222C554057FE1AD2 /* shape.hpp */,
+				5DB4E1E9EB47115F0DEC5373EA6F0DEE /* shape.hpp */,
+				83C7111B814FBD8806DCCD113BD146B0 /* shape_distance.hpp */,
+				1A12A9B53ADECD5CB8EDC9B90E8FE17B /* shape_transformer.hpp */,
+				F82CF1D4F752EFE7AABEDB39BCB97FA4 /* shape_utils.hpp */,
+				00153BD01A493CD05C9F802F02C6C4D4 /* simplex_downhill.h */,
+				F2C229D76D8B8A364962CF459A229757 /* softfloat.hpp */,
+				922B6F1E606E72734AC156E46195D08E /* sse_utils.hpp */,
+				CA63223D59DC3C750A9C1423A3E2ABC2 /* stabilizer.hpp */,
+				FA85174A839E6A9ED97E6CC1C8877747 /* stitching.hpp */,
+				D7BF5738B9AE82F31FCA704F75DC88EA /* timelapsers.hpp */,
+				E46A1AF06C54A0D7118B3C5707AB2FBC /* timer.h */,
+				62C73826C593FBE6281B12F29A8C0EFB /* trace.hpp */,
+				F97685D7BB1ED1ABC2B4902E3B7B219A /* tracking.hpp */,
+				720448E9CF76E680677ABF8E2D16310F /* tracking_c.h */,
+				2C0B14BA6E206FF25808730F7E52631C /* traits.hpp */,
+				8E50E1908F7F569B61A6544AEB042E25 /* types.hpp */,
+				7F86E993E8A62A8366DCB64333DBFE44 /* types_c.h */,
+				F209D65DA5F257E1D8898C06DD5FDA7B /* types_c.h */,
+				CB5758ECB9A8CF961CA3677B2AB887DE /* util.hpp */,
+				BD4A22B39A067ADC807E88DD716A724D /* util_inl.hpp */,
+				CEFCFF26D2B4F04079BB588B422A0895 /* utility.hpp */,
+				67761ECF24C0EA16F22023346081A84C /* va_intel.hpp */,
+				30D36D69EAFE0AA97A210934FD863E2E /* version.hpp */,
+				DC343A4FAE935BE1D69F93AEA79E3CAE /* video.hpp */,
+				C6B7F729E7A40848F2CB806D7471724E /* video.hpp */,
+				CF0330CAC47B04F5F29655499961B34C /* videoio.hpp */,
+				8295C724CC26EC53BF6505794CC0D3E2 /* videoio.hpp */,
+				A5CAAA081028C4D8E7D48924927316D1 /* videoio_c.h */,
+				9F238DA5435302695250D8412A16C7C7 /* videostab.hpp */,
+				4424EA5096FBB7192E3EDF7B44A51E3E /* vsx_utils.hpp */,
+				99E9D84F4DD61226502E7F72214C6FE1 /* warpers.hpp */,
+				1EE9095B956C60303AF18517346F0883 /* warpers.hpp */,
+				4EE11714D5531BC61D4F060E638DFCCA /* warpers_inl.hpp */,
+				59CDB86CEB55CD576A5F3DB3F9BC0DD6 /* wimage.hpp */,
+				990EA3B5B57C270CC819F1D0CD8B0956 /* wobble_suppression.hpp */,
+				720D78F50BF4DF189F4F92E7B41CC3D1 /* world.hpp */,
+				B5673026224875F2914AA88B25B2B66F /* Frameworks */,
+				D748446346A9772528E19ECA336D7CCF /* Support Files */,
+			);
+			name = OpenCV;
+			path = OpenCV;
+			sourceTree = "<group>";
+		};
+		B5673026224875F2914AA88B25B2B66F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F68206D789C3FE87284DD4C3FC48728 /* libopencv2Static.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1E9D2082D6C0FD33236CBD8AEDE471E /* Pods-FacifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B71DBA0EBAD21C5E888F63CE951EAE57 /* Info.plist */,
+				F0E7C9C4522C642E53EBF30DEEE88B73 /* Pods-FacifyUITests.modulemap */,
+				EF6081D8BFB4F4C52D4DAE83A917A5D0 /* Pods-FacifyUITests-acknowledgements.markdown */,
+				9541480778CE3D5AF4A764B055C3DE29 /* Pods-FacifyUITests-acknowledgements.plist */,
+				358BD17C4692009A02E4CE49ED2CAFB0 /* Pods-FacifyUITests-dummy.m */,
+				58D313A4BCE81C75AD06B4490EE16F94 /* Pods-FacifyUITests-frameworks.sh */,
+				061448CD590FF7303D461F65757860A5 /* Pods-FacifyUITests-resources.sh */,
+				0E2473063C1598270687DDF4E096B0AC /* Pods-FacifyUITests-umbrella.h */,
+				9EB700C1DFE8996E22F103006E35BC48 /* Pods-FacifyUITests.debug.xcconfig */,
+				179B53FE50697B019BC8FB54BD3E4F83 /* Pods-FacifyUITests.release.xcconfig */,
+			);
+			name = "Pods-FacifyUITests";
+			path = "Target Support Files/Pods-FacifyUITests";
+			sourceTree = "<group>";
+		};
+		D748446346A9772528E19ECA336D7CCF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				08C49C8D382F45D70C95629AD22A03BA /* Info.plist */,
+				46633D2341A0B4215CCD963E6CFCA74E /* OpenCV.modulemap */,
+				FB983F082561F61CF68FE0B86B0FB843 /* OpenCV.xcconfig */,
+				15893F00011E1950D8EFB806AF8AD028 /* OpenCV-dummy.m */,
+				A8B060D33DB89C61EBF0DA22B25B79A0 /* OpenCV-prefix.pch */,
+				70A0CAC174D7237B691B146124214325 /* OpenCV-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OpenCV";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		169260E997F3043EE2DEF98AAF227DE2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91B97046EA3E159686A6AA5FDD4A430 /* Pods-FacifyTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23E36449B2702FC561678B888CCF6896 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3666127B0AB29FDC48D3E1F2764E6784 /* Pods-FacifyUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A07264EBDBE7B12E916CFEAA6DB4C34D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD2A588A3A4C4650778FB81105821E91 /* Pods-Facify-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC1D34E58E1FBECE75722192A571A6FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BD8BA02700D32C081F58DEB47031F4F /* affine.hpp in Headers */,
+				ABB00021FD3ED15782B77D717475950E /* all_indices.h in Headers */,
+				00B0B5ADCF54B974AEE97E755954F598 /* all_layers.hpp in Headers */,
+				98CC3CC85CEEAF1661088FC98E42CF88 /* allocator.h in Headers */,
+				4DEE108B123376BC029A0FA3005BE590 /* any.h in Headers */,
+				416FA926434C1E47B6FF907E8249420D /* autocalib.hpp in Headers */,
+				30BEC8B59FEF82D418596449553FF4C3 /* autotuned_index.h in Headers */,
+				49E90DFCCB3770DAB1DA20E3F4D7A14A /* background_segm.hpp in Headers */,
+				0A5F9260349062128114FDC4D1C11C86 /* base.hpp in Headers */,
+				9D7E5D6DD3648D242C1F56BBED39D928 /* blenders.hpp in Headers */,
+				5584D4CD0DB9B66261B01466CA9748B2 /* bufferpool.hpp in Headers */,
+				D46F10E98D72D5953FDDD2B82126C727 /* calib3d.hpp in Headers */,
+				C66BCE38288408132193EAD5EC32E6AA /* calib3d.hpp in Headers */,
+				5E0B55E258C6FF45A66171E369F2828D /* calib3d_c.h in Headers */,
+				D717536786C49D0EEB6865DD2DDAD71F /* camera.hpp in Headers */,
+				796B2DD905232AF30695C7ACA6134F58 /* cap_ios.h in Headers */,
+				A5B4E588C45D32D9F1EDC242E84695A9 /* composite_index.h in Headers */,
+				36BB461BCD95DF2E60C14EEE3D01DA41 /* config.h in Headers */,
+				8A3484D16B02FFBBFC6FA1CC00FE0C5A /* core.hpp in Headers */,
+				B2739FFFA2F2C9C4FF3EC7C66292CD5A /* core.hpp in Headers */,
+				F61DD18C89099C9F0AA178D9BE816DC8 /* core_c.h in Headers */,
+				EFC86DA8093E2F0E091ECF5D3B1B3ACF /* cuda.hpp in Headers */,
+				E68EFFDE61A8C005646E3D27FBFB73E6 /* cuda.hpp in Headers */,
+				77B862844F82091CB1D3044DF154BE3E /* cuda.inl.hpp in Headers */,
+				4630CE411A6ACFB1ABFEAD12305262A5 /* cuda_stream_accessor.hpp in Headers */,
+				A81463B3F68FED4996C99C518326933C /* cuda_types.hpp in Headers */,
+				5075D5762AF502C139161FA88D86E585 /* cv_cpu_dispatch.h in Headers */,
+				AD64B49359067E9353AF8247C3DCE086 /* cv_cpu_helper.h in Headers */,
+				34C10433226C9B86C6156FB52E48F44C /* cvconfig.h in Headers */,
+				E76F35F8BDC0F03DC79906D802CA1E40 /* cvdef.h in Headers */,
+				9EE381A3CD9B02CA57688B62C5A8D8D7 /* cvstd.hpp in Headers */,
+				AAC205F3326FDFE06041314928866B94 /* cvstd.inl.hpp in Headers */,
+				0F6F0982A71A2135841117A5AFBE3883 /* deblurring.hpp in Headers */,
+				24985A8A822E3D3428C836ACA4033FFA /* defines.h in Headers */,
+				83CF4644487F3FA376D1A9B69022D787 /* detection_based_tracker.hpp in Headers */,
+				CAE4AD813894D898D6681137918A8E3F /* dict.hpp in Headers */,
+				C08FAFC5E7D187C5B956886A6912A765 /* directx.hpp in Headers */,
+				001B9C808ECEC22194E7FE31D1D68812 /* dist.h in Headers */,
+				5958883C5DECA8E0289FEBAECED4D51B /* distortion_model.hpp in Headers */,
+				B1A4B2A84865B14C3DCA51F01D2EA8F2 /* dnn.hpp in Headers */,
+				F899C1ACB9D4AE55ACC3A813000A580F /* dnn.hpp in Headers */,
+				D03DCBADB67C329DD01F932F2F8CDA20 /* dnn.inl.hpp in Headers */,
+				4056653D426DBCC869D5263766D34E16 /* dummy.h in Headers */,
+				E77F1B0C2625B58CB32964F09E92BAB8 /* dynamic_bitset.h in Headers */,
+				615365A02F378D7CC749B23A5615FB48 /* eigen.hpp in Headers */,
+				B1DBE10AFA8F287638A485D639172B67 /* emdL1.hpp in Headers */,
+				37908094E89AD764D2B0FC55E208AE20 /* exposure_compensate.hpp in Headers */,
+				044F1FBEC6DE6A33B440DAC9937837AC /* fast_marching.hpp in Headers */,
+				4876B45B8492A0046F6D359AA562FBFA /* fast_marching_inl.hpp in Headers */,
+				116054E3A9267AF55B26781B245797D2 /* fast_math.hpp in Headers */,
+				E6D4D95A9FE9C3E241F37D5E843EFA1A /* features2d.hpp in Headers */,
+				A0C9D059A554D6B98535FB407B6D30D6 /* features2d.hpp in Headers */,
+				19EEB4ADA3E1C6818ECB554AC8C35BE3 /* flann.hpp in Headers */,
+				35A76222D41314FC6FB91C5D3203F3A6 /* flann.hpp in Headers */,
+				446553E1F7D776987C183722B275C9DD /* flann_base.hpp in Headers */,
+				37CF2877372F50355F2A5219D42084CD /* frame_source.hpp in Headers */,
+				6DBE856F13EF6EC9899E6643EC6D36C5 /* general.h in Headers */,
+				CFB5E0AB52312F6262D45D8806DB1D1C /* global_motion.hpp in Headers */,
+				C72367CD4A6862903FECEA4282293CAF /* ground_truth.h in Headers */,
+				1477E2CF5B011FE27E66649500A016B2 /* hal.hpp in Headers */,
+				672CE2A4273EDEEDDCE1A970DF7956B8 /* hal.hpp in Headers */,
+				D3C63C6BA6F895901214DE051B5BB65C /* hdf5.h in Headers */,
+				53266A2B627E8285AAE2D01030013874 /* heap.h in Headers */,
+				EA7DE51283E8BD2521EEFA51D26D5A12 /* hierarchical_clustering_index.h in Headers */,
+				D63C2ED40288474BB559DA3C19817602 /* highgui.hpp in Headers */,
+				EA31B1D74079F67E04582B9B704B21E2 /* highgui.hpp in Headers */,
+				885E4912E3731FB369B68B7A1E81CA34 /* highgui_c.h in Headers */,
+				6FF4083DA1DD7867AD92DEC72C31735D /* hist_cost.hpp in Headers */,
+				72AD870125917EAA1B8D0BE7A0831959 /* imgcodecs.hpp in Headers */,
+				6055B515ED54AF09542A9917D442129B /* imgcodecs.hpp in Headers */,
+				0055C0B10881A1D0344C91F15F348B68 /* imgcodecs_c.h in Headers */,
+				F373C313FB4D77DFAB2C315B11D41DF0 /* imgproc.hpp in Headers */,
+				9948D13CA2A86FE1A74525DC80A6D043 /* imgproc.hpp in Headers */,
+				B39CCE99719EF302B17911F825F73E2D /* imgproc_c.h in Headers */,
+				7CE9731D7C30C1A92DA6276B056B4255 /* index_testing.h in Headers */,
+				75CC634A2BD90B81C4AAC41890DA2AA8 /* inpainting.hpp in Headers */,
+				D95F6B6465FA2A6448260BEF638109FD /* interface.h in Headers */,
+				08211B48C1C9CC9AFE31F5464CE2D021 /* interface.h in Headers */,
+				BB262F1BD67F2EC0916B0B04F51D6279 /* intrin.hpp in Headers */,
+				CD5DCD76E6E0585DD3D3A7A592895E78 /* intrin_cpp.hpp in Headers */,
+				0C455281533A1261E103C8C34180B915 /* intrin_neon.hpp in Headers */,
+				9C3974B6268CBD8A055790769715789D /* intrin_sse.hpp in Headers */,
+				76F49BFF33D4329B31F63975F28D4B66 /* intrin_vsx.hpp in Headers */,
+				B05433575EEF40433B688C32168E195F /* ios.h in Headers */,
+				7E2F556331F7B4E248FFEC8449BBAF0D /* ippasync.hpp in Headers */,
+				CA8B47D117C29D0CBCA631E2FC8E507C /* kdtree_index.h in Headers */,
+				6C933238104EC19DB93F8927DC2C702E /* kdtree_single_index.h in Headers */,
+				4536F8D7C741E68E227423110F856F29 /* kmeans_index.h in Headers */,
+				E1B5A26AAB2C1E32B878FC0224E474FF /* layer.details.hpp in Headers */,
+				026551C38B43FFD62616065F8D7B1CE0 /* layer.hpp in Headers */,
+				CE8B45220C5A2100F69D6A9EFF3576CE /* linear_index.h in Headers */,
+				EC096889A2A8B30E0D2AFE952BEBE519 /* log.hpp in Headers */,
+				8CB06B9132E63B52B70F1CBA77E0D97B /* logger.h in Headers */,
+				08ABA3DA2972EB0A361F53AE23B3F6C8 /* logger.hpp in Headers */,
+				96D705DAFE32ED6BC91CB09FA10897DB /* lsh_index.h in Headers */,
+				BF940E32BD7152A69BC4D1E7E064C03B /* lsh_table.h in Headers */,
+				AD40EFFFDD7B07A42470B70A5BCA0434 /* mat.hpp in Headers */,
+				60FD4C3F5A9CF93D0B50441C9414DFBB /* mat.inl.hpp in Headers */,
+				83F6CC6E98B2E86AD8C5150E5CEFCA40 /* matchers.hpp in Headers */,
+				57DA2B394B010B143537FC3E851A08B2 /* matrix.h in Headers */,
+				E2AF24BD3EA0E173E18A7A14C6FA8825 /* matx.hpp in Headers */,
+				D7114FF229B0AAF85B5D093D4504B5EB /* miniflann.hpp in Headers */,
+				5C844E0EB3E2A236B3FCE49E29F40FAC /* ml.hpp in Headers */,
+				4F2BAE99D12AF0906C85B47EB6A68517 /* ml.hpp in Headers */,
+				350DBEC4730A28ED1DC551C289C6DF21 /* motion_core.hpp in Headers */,
+				556207726F98DCDD313248B534A4C44C /* motion_estimators.hpp in Headers */,
+				1BCB2632299FDDBA3C6C856C49921172 /* motion_stabilizing.hpp in Headers */,
+				DBB6F63603E8F9DFB9B51D68F1D3BF85 /* neon_utils.hpp in Headers */,
+				318E5FA596770104E5E4D09479DFD251 /* nn_index.h in Headers */,
+				D9AB5F3C7BE7A07DDC89279660FF7370 /* objdetect.hpp in Headers */,
+				2EB5B4BF0236907FE6A183AFC34D62AE /* objdetect.hpp in Headers */,
+				18DB1AC3DA2ED3EFDF42ED89EFBD729C /* objdetect_c.h in Headers */,
+				1F1E40E1D0B208E4269C0A24F01CA764 /* object_factory.h in Headers */,
+				1B376AD0B29AE41208E2DE84610A4E90 /* ocl.hpp in Headers */,
+				9D85CCE3A9390FD0486B61DE86E38239 /* ocl_genbase.hpp in Headers */,
+				52D7D90A8384014305B0D6658E10B03E /* OpenCV-umbrella.h in Headers */,
+				F35B7CC3CB81051159F84BE7AC5BA70F /* opencv.hpp in Headers */,
+				B2FA6E37C756AEA1E3ABE19767CAE6EE /* opencv_modules.hpp in Headers */,
+				6B0A76209F85D0B816C68EC2ADA3E802 /* opengl.hpp in Headers */,
+				F1F32371AD7BB18C23112C79DB90FD4D /* operations.hpp in Headers */,
+				C836B5A68DA149E242D0A3CB93C73B6C /* optical_flow.hpp in Headers */,
+				5306CA34929100E64E261933633172C6 /* optim.hpp in Headers */,
+				6272A8C67EF13240622AAE3A6B34A095 /* outlier_rejection.hpp in Headers */,
+				2C109376582F2D51BBAACE2C2282A6FD /* ovx.hpp in Headers */,
+				F9A20281A91861C214F09738A2B66694 /* params.h in Headers */,
+				54A7CA4F988D7918ABAC5AA4916698F4 /* persistence.hpp in Headers */,
+				5D98B22F57A77146239000EB42308F0D /* photo.hpp in Headers */,
+				329EA4D289124EEF82BAD275AFC04DD4 /* photo.hpp in Headers */,
+				31A6C1612DE62E675F82DF5839EED611 /* photo_c.h in Headers */,
+				A9C9B34051345EE0FC7D76BE1A1172CE /* ptr.inl.hpp in Headers */,
+				B6A4948F806D2DAF7C5D0B2D0B868A02 /* random.h in Headers */,
+				2B9E4D5B057D289F549A5E5917153C3F /* result_set.h in Headers */,
+				7034DADE3EF9C962994208809323EE20 /* ring_buffer.hpp in Headers */,
+				54A43138D106A909752FFA6D1DE29B5E /* sampling.h in Headers */,
+				F5A34AC240828F76A5636A03E24B79D9 /* saturate.hpp in Headers */,
+				61D5FC6F4DF94278045F1D1F6303C1D8 /* saving.h in Headers */,
+				941137242988ACE90202525FBE7D830A /* seam_finders.hpp in Headers */,
+				FC8F146235A72DB0A6B0A9DF45AFEC6F /* shape.hpp in Headers */,
+				8536DBF616326A693CED57D2F75EF8FD /* shape.hpp in Headers */,
+				65C7BAED8E070CF56B52CAA1AA00E9F0 /* shape_distance.hpp in Headers */,
+				00E199E48BCF27CB75B681241ECA5561 /* shape_transformer.hpp in Headers */,
+				6DB8F899D9AFBC02883B525FEB532C8A /* shape_utils.hpp in Headers */,
+				1203F06EAC9BC3B06385C60AF7CE0167 /* simplex_downhill.h in Headers */,
+				D1D827EFF6169FE214CD94FADFA795E0 /* softfloat.hpp in Headers */,
+				57C7DF95024CDF0276C392B1ACB754FB /* sse_utils.hpp in Headers */,
+				E6A426879C76676C0442F2E15683AB80 /* stabilizer.hpp in Headers */,
+				444914B6F7781B6A6438DB5B1B96F279 /* stitching.hpp in Headers */,
+				9038445BDA1BBEB8C61A0279907E7598 /* timelapsers.hpp in Headers */,
+				1BF490B18C38936B7EEB132EF62E0529 /* timer.h in Headers */,
+				726D21284DCC1C33535C3AA5194CE704 /* trace.hpp in Headers */,
+				952625E0394DC94B29E23AA47B8BBD47 /* tracking.hpp in Headers */,
+				A68308B826688038740D02FF31862A98 /* tracking_c.h in Headers */,
+				0B09106F935703EEDBF8E65F7108C8F4 /* traits.hpp in Headers */,
+				421C485580DF82AA5E18320D401DFF35 /* types.hpp in Headers */,
+				4860C197DA41814CD908E90601120CD1 /* types_c.h in Headers */,
+				20E27A293A9F50171100728334D34358 /* types_c.h in Headers */,
+				37DF6AC31DA274956D200BF16031C451 /* util.hpp in Headers */,
+				3FF33709EBD8A22D483B2ED93B792F2D /* util_inl.hpp in Headers */,
+				FCCB9C39B77D95C7D89F66E03D2751DA /* utility.hpp in Headers */,
+				74920D71BFD05D61D732E0B0BB1A01A8 /* va_intel.hpp in Headers */,
+				E771FDA3ABE1091E0DC9728BF17C1457 /* version.hpp in Headers */,
+				06C7C95120AAC7AF823AF16FC4212077 /* video.hpp in Headers */,
+				FFA8072E0A332BA9D81D5155BE985AAC /* video.hpp in Headers */,
+				11852F91012C17B3E1267EA8D943A65F /* videoio.hpp in Headers */,
+				97D83F102F09D14A08BE2332776181C6 /* videoio.hpp in Headers */,
+				498484DFFF09D46E47201D2CB7324AF2 /* videoio_c.h in Headers */,
+				BB9CC44707F83A0167094759B87461D6 /* videostab.hpp in Headers */,
+				CB79A5C022136789383868A93B5A0FFF /* vsx_utils.hpp in Headers */,
+				4E384CCB8F89D9CE6B382BC84AFA395E /* warpers.hpp in Headers */,
+				4BCD5D8169E112B2F35B26D4B46D1393 /* warpers.hpp in Headers */,
+				2578074ABC7AE557270F9BFF77028870 /* warpers_inl.hpp in Headers */,
+				53E059EAB799C9C170C6757B19E82F12 /* wimage.hpp in Headers */,
+				C8DB017AF5E2C151CFF61FA587399777 /* wobble_suppression.hpp in Headers */,
+				38CC119823BCD0FA22A763131C37AEC9 /* world.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		12B92BA75DD9FCAD241783EF2AF85A1B /* Pods-FacifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BADED5A3317D2A5EE348AADAED4E873 /* Build configuration list for PBXNativeTarget "Pods-FacifyTests" */;
+			buildPhases = (
+				0D800DBCB947FD4F312AFA62F7C2A29A /* Sources */,
+				686A66FC10223E686434699971F96DD9 /* Frameworks */,
+				169260E997F3043EE2DEF98AAF227DE2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FacifyTests";
+			productName = "Pods-FacifyTests";
+			productReference = 80D0297D06758AE97E9B73DE48821C58 /* Pods_FacifyTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3C073723658A4A0F0A2769C75B666CBE /* Pods-FacifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08BE152B35415CDACB872524107BC0DA /* Build configuration list for PBXNativeTarget "Pods-FacifyUITests" */;
+			buildPhases = (
+				AEBDEF55A617B872B86F5775BD34A967 /* Sources */,
+				BECA80D6E8D5BFADC8356766B76FA46C /* Frameworks */,
+				23E36449B2702FC561678B888CCF6896 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FacifyUITests";
+			productName = "Pods-FacifyUITests";
+			productReference = FF1948DCC4DE9C395E017E38178E4E3C /* Pods_FacifyUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7FAE7589D1C98F143580CF2B89012FBB /* OpenCV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE9242ACA2CAC7B0F837AA89E11B711E /* Build configuration list for PBXNativeTarget "OpenCV" */;
+			buildPhases = (
+				3D8AC291A463201B42E14E4BF62FC7DF /* Sources */,
+				A7FB6DFE34A8839387BE5E495D8782F0 /* Frameworks */,
+				AC1D34E58E1FBECE75722192A571A6FD /* Headers */,
+				5FF7192AE4D61F757FAA100AB8D81B66 /* Copy . Public Headers */,
+				E9295873344130B7DC3ACC472FF66147 /* Copy calib3d Public Headers */,
+				C26824D82B324E4C516FE904C73FD649 /* Copy core Public Headers */,
+				DDC2E3A5086FB2B2C4B8DB5B669630DD /* Copy core/hal Public Headers */,
+				FB20702F4E04B49A6AA79248E37920E1 /* Copy core/utils Public Headers */,
+				61FAEE7A112E0BCF0DB6BA8777458FBC /* Copy dnn Public Headers */,
+				433A166CD4F67649D54D52E885917995 /* Copy features2d Public Headers */,
+				8177DEA7FE304611C07E6EB477C1C431 /* Copy flann Public Headers */,
+				7E1E00E1CC39440BF74AA5878549721F /* Copy highgui Public Headers */,
+				EE8DFF38FA452DD2930B9BBA603A2213 /* Copy imgcodecs Public Headers */,
+				325FB5F9B7F43012210583BF30C69801 /* Copy imgproc/detail Public Headers */,
+				3A1E4A8C8D72BE5515A0726F70B1C1B4 /* Copy imgproc/hal Public Headers */,
+				E0D7DB8F6CF4ADCA300D01067A6E0EEF /* Copy imgproc Public Headers */,
+				199F0F9CF165E2799BC0B5D2DF768C1F /* Copy ml Public Headers */,
+				7CE0FCEECD60FB02D6184A95BB8D8107 /* Copy objdetect Public Headers */,
+				F8D30E5D7D2FC3CA652319943C5D16C8 /* Copy photo Public Headers */,
+				7429558D0D015901AC7CB9936DAFDE6F /* Copy shape Public Headers */,
+				5BDC2F0A3D365AB492CEBB9082B8CEB8 /* Copy stitching/detail Public Headers */,
+				EE2689A7AD670808012B0A599BEB0AB8 /* Copy stitching Public Headers */,
+				A6959A3252BAFACE5E92D908F12227DA /* Copy video Public Headers */,
+				68F31561BBE54715A2BB56F6F5415139 /* Copy videoio Public Headers */,
+				523F400C760C4F87067B2FE6FDDFD3F9 /* Copy videostab Public Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenCV;
+			productName = OpenCV;
+			productReference = B58700665180DF237768E27D47287622 /* opencv2.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D8BC40D1D82FC73A3B8B8CEAB12074C7 /* Pods-Facify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CC605ECE8DD6AA2B84E380658FEF99D /* Build configuration list for PBXNativeTarget "Pods-Facify" */;
+			buildPhases = (
+				C139AFE638AC2C6E1C5BD99A74671260 /* Sources */,
+				B790515C23B06DAA9C0F7100FFF28168 /* Frameworks */,
+				A07264EBDBE7B12E916CFEAA6DB4C34D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67CB4879903AF2A7BCBB7A91BE92A9D4 /* PBXTargetDependency */,
+			);
+			name = "Pods-Facify";
+			productName = "Pods-Facify";
+			productReference = 4926D41BC5625A51799A340AAD157903 /* Pods_Facify.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6D9291D488F2210BE463B49BCDED31E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FAE7589D1C98F143580CF2B89012FBB /* OpenCV */,
+				D8BC40D1D82FC73A3B8B8CEAB12074C7 /* Pods-Facify */,
+				12B92BA75DD9FCAD241783EF2AF85A1B /* Pods-FacifyTests */,
+				3C073723658A4A0F0A2769C75B666CBE /* Pods-FacifyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D800DBCB947FD4F312AFA62F7C2A29A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F7811EF92578456C1ECB0C5112B261B /* Pods-FacifyTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D8AC291A463201B42E14E4BF62FC7DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BAD7BC4B5E84E68DE08581C0A57A83C /* Empty.m in Sources */,
+				634BE35E6E26E153538C27A8AE5665D0 /* OpenCV-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEBDEF55A617B872B86F5775BD34A967 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B627776245F334DA8C16C9D52F337FD4 /* Pods-FacifyUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C139AFE638AC2C6E1C5BD99A74671260 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE36C280AD3C570E9059825675983662 /* Pods-Facify-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67CB4879903AF2A7BCBB7A91BE92A9D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OpenCV;
+			target = 7FAE7589D1C98F143580CF2B89012FBB /* OpenCV */;
+			targetProxy = 2334356A8C0D5F2733C11D2C13361616 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B5A8DE2EC6E5A64185B0A167D0A4AD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		12A745EEE02FEE755E4FFB15EDCB5A8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 179B53FE50697B019BC8FB54BD3E4F83 /* Pods-FacifyUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FacifyUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FacifyUITests/Pods-FacifyUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FacifyUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3D3DE3221E969052DCD9FCCB3B302148 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD45F68E01B3FC6034312DA39C2CC9A7 /* Pods-FacifyTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FacifyTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FacifyTests/Pods-FacifyTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FacifyTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4C1E462F94EC8B7E8269ACA292FE7B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A44D87FF28184D49C5B8AF80CB48E1B /* Pods-Facify.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Facify/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Facify/Pods-Facify.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Facify;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9F3B0F22CF89250A884673B97FC82359 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB983F082561F61CF68FE0B86B0FB843 /* OpenCV.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OpenCV/OpenCV-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OpenCV/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OpenCV/OpenCV.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = opencv2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB2FD5ABE7CEAECECE3D78462414068B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67557C14531B99972531649273B57B05 /* Pods-Facify.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Facify/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Facify/Pods-Facify.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Facify;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ABC1C622E3A94D5EFA80B6DBB5E64193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B92902B3F18C064FF2A55C2DE9ED57B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EB700C1DFE8996E22F103006E35BC48 /* Pods-FacifyUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FacifyUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FacifyUITests/Pods-FacifyUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FacifyUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BE01B6E26ED4F0D341EC949C0581C3F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB983F082561F61CF68FE0B86B0FB843 /* OpenCV.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OpenCV/OpenCV-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OpenCV/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OpenCV/OpenCV.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = opencv2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E10ACB13D81584497721CC400D8312B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D51FC0FCE4BABBD479736EFCB61ADFEC /* Pods-FacifyTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FacifyTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FacifyTests/Pods-FacifyTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FacifyTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08BE152B35415CDACB872524107BC0DA /* Build configuration list for PBXNativeTarget "Pods-FacifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B92902B3F18C064FF2A55C2DE9ED57B7 /* Debug */,
+				12A745EEE02FEE755E4FFB15EDCB5A8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B5A8DE2EC6E5A64185B0A167D0A4AD1 /* Debug */,
+				ABC1C622E3A94D5EFA80B6DBB5E64193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BADED5A3317D2A5EE348AADAED4E873 /* Build configuration list for PBXNativeTarget "Pods-FacifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D3DE3221E969052DCD9FCCB3B302148 /* Debug */,
+				E10ACB13D81584497721CC400D8312B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CC605ECE8DD6AA2B84E380658FEF99D /* Build configuration list for PBXNativeTarget "Pods-Facify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C1E462F94EC8B7E8269ACA292FE7B28 /* Debug */,
+				AB2FD5ABE7CEAECECE3D78462414068B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE9242ACA2CAC7B0F837AA89E11B711E /* Build configuration list for PBXNativeTarget "OpenCV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F3B0F22CF89250A884673B97FC82359 /* Debug */,
+				BE01B6E26ED4F0D341EC949C0581C3F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
