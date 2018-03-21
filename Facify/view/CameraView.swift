@@ -1,5 +1,5 @@
 //
-//  PreviewView.swift
+//  CameraView.swift
 //  Facify
 //
 //  Created by Khurram on 21/03/2018.
