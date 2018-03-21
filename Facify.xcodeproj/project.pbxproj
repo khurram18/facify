@@ -14,6 +14,9 @@
 		2041325E20614AAC00E0B6E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2041325C20614AAC00E0B6E8 /* LaunchScreen.storyboard */; };
 		2041326920614AAC00E0B6E8 /* FacifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2041326820614AAC00E0B6E8 /* FacifyTests.swift */; };
 		2041327420614AAC00E0B6E8 /* FacifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2041327320614AAC00E0B6E8 /* FacifyUITests.swift */; };
+		2B0FB2F074FE2984F3BEF96F /* Pods_FacifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9920C3E383028FF3E6F54A9 /* Pods_FacifyTests.framework */; };
+		8748BEF99ED2B6A7C6E59D72 /* Pods_FacifyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA06FFAB2FCAF825E790EFE /* Pods_FacifyUITests.framework */; };
+		B82120C3ADF08F2644981E23 /* Pods_Facify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A8540C112BBD7C50A327E /* Pods_Facify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15DC1878DA7425492009731C /* Pods-Facify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Facify/Pods-Facify.release.xcconfig"; sourceTree = "<group>"; };
 		2041325020614AAB00E0B6E8 /* Facify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2041325320614AAC00E0B6E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2041325520614AAC00E0B6E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,14 @@
 		2041326F20614AAC00E0B6E8 /* FacifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2041327320614AAC00E0B6E8 /* FacifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacifyUITests.swift; sourceTree = "<group>"; };
 		2041327520614AAC00E0B6E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36064C2F7D1CE1EEF180CF9A /* Pods-FacifyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacifyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FacifyUITests/Pods-FacifyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C48DD74D35864730D3E1911 /* Pods-FacifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacifyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FacifyTests/Pods-FacifyTests.release.xcconfig"; sourceTree = "<group>"; };
+		66F59D39BB52A336CB969DE9 /* Pods-FacifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacifyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FacifyTests/Pods-FacifyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D391EC461E1773E08316751 /* Pods-FacifyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacifyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FacifyUITests/Pods-FacifyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B9920C3E383028FF3E6F54A9 /* Pods_FacifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacifyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA06FFAB2FCAF825E790EFE /* Pods_FacifyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacifyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E029B1849C96B7D8AF15B222 /* Pods-Facify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Facify/Pods-Facify.debug.xcconfig"; sourceTree = "<group>"; };
+		ED3A8540C112BBD7C50A327E /* Pods_Facify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Facify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B82120C3ADF08F2644981E23 /* Pods_Facify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B0FB2F074FE2984F3BEF96F /* Pods_FacifyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8748BEF99ED2B6A7C6E59D72 /* Pods_FacifyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				2041326720614AAC00E0B6E8 /* FacifyTests */,
 				2041327220614AAC00E0B6E8 /* FacifyUITests */,
 				2041325120614AAB00E0B6E8 /* Products */,
+				52D6D696D2946EAD75611F4F /* Pods */,
+				52768B4F7F2B346C0F431EF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = FacifyUITests;
 			sourceTree = "<group>";
 		};
+		52768B4F7F2B346C0F431EF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED3A8540C112BBD7C50A327E /* Pods_Facify.framework */,
+				B9920C3E383028FF3E6F54A9 /* Pods_FacifyTests.framework */,
+				BEA06FFAB2FCAF825E790EFE /* Pods_FacifyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52D6D696D2946EAD75611F4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E029B1849C96B7D8AF15B222 /* Pods-Facify.debug.xcconfig */,
+				15DC1878DA7425492009731C /* Pods-Facify.release.xcconfig */,
+				66F59D39BB52A336CB969DE9 /* Pods-FacifyTests.debug.xcconfig */,
+				4C48DD74D35864730D3E1911 /* Pods-FacifyTests.release.xcconfig */,
+				36064C2F7D1CE1EEF180CF9A /* Pods-FacifyUITests.debug.xcconfig */,
+				9D391EC461E1773E08316751 /* Pods-FacifyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2041327820614AAC00E0B6E8 /* Build configuration list for PBXNativeTarget "Facify" */;
 			buildPhases = (
+				A9D827C0A103B07F9BAD8F4A /* [CP] Check Pods Manifest.lock */,
 				2041324C20614AAB00E0B6E8 /* Sources */,
 				2041324D20614AAB00E0B6E8 /* Frameworks */,
 				2041324E20614AAB00E0B6E8 /* Resources */,
+				F97E16738D12417393D56A3C /* [CP] Embed Pods Frameworks */,
+				8B8ADA6921BF6FE46BA54522 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2041327B20614AAC00E0B6E8 /* Build configuration list for PBXNativeTarget "FacifyTests" */;
 			buildPhases = (
+				8ED4E9B332E3F8910B7E8031 /* [CP] Check Pods Manifest.lock */,
 				2041326020614AAC00E0B6E8 /* Sources */,
 				2041326120614AAC00E0B6E8 /* Frameworks */,
 				2041326220614AAC00E0B6E8 /* Resources */,
+				B9E7B5D45014D0B16113C1F2 /* [CP] Embed Pods Frameworks */,
+				8AE1EBCF02FF4F11EDFAD84C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2041327E20614AAC00E0B6E8 /* Build configuration list for PBXNativeTarget "FacifyUITests" */;
 			buildPhases = (
+				2EDE1BE8E8D798B574064699 /* [CP] Check Pods Manifest.lock */,
 				2041326B20614AAC00E0B6E8 /* Sources */,
 				2041326C20614AAC00E0B6E8 /* Frameworks */,
 				2041326D20614AAC00E0B6E8 /* Resources */,
+				EDBEC25E7BF1D11A44A0AFB1 /* [CP] Embed Pods Frameworks */,
+				702FB8831F08CC5843A1592A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EDE1BE8E8D798B574064699 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		702FB8831F08CC5843A1592A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FacifyUITests/Pods-FacifyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AE1EBCF02FF4F11EDFAD84C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FacifyTests/Pods-FacifyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B8ADA6921BF6FE46BA54522 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Facify/Pods-Facify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ED4E9B332E3F8910B7E8031 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A9D827C0A103B07F9BAD8F4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B9E7B5D45014D0B16113C1F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FacifyTests/Pods-FacifyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDBEC25E7BF1D11A44A0AFB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FacifyUITests/Pods-FacifyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F97E16738D12417393D56A3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Facify/Pods-Facify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2041324C20614AAB00E0B6E8 /* Sources */ = {
@@ -424,6 +611,7 @@
 		};
 		2041327920614AAC00E0B6E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E029B1849C96B7D8AF15B222 /* Pods-Facify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +626,7 @@
 		};
 		2041327A20614AAC00E0B6E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15DC1878DA7425492009731C /* Pods-Facify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +641,7 @@
 		};
 		2041327C20614AAC00E0B6E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66F59D39BB52A336CB969DE9 /* Pods-FacifyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +658,7 @@
 		};
 		2041327D20614AAC00E0B6E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C48DD74D35864730D3E1911 /* Pods-FacifyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +675,7 @@
 		};
 		2041327F20614AAC00E0B6E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36064C2F7D1CE1EEF180CF9A /* Pods-FacifyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +691,7 @@
 		};
 		2041328020614AAC00E0B6E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D391EC461E1773E08316751 /* Pods-FacifyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
