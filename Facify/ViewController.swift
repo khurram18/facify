@@ -26,6 +26,7 @@ private var cameraView: CameraView {
     return view as! CameraView
 }
 private let session = AVCaptureSession()
+private let cv = CVWrapper()
 }
 // MARK: - Authorization
 extension ViewController {
@@ -86,5 +87,6 @@ func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBu
     guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
         return
     }
+    cv.detect(pixelBuffer)
 }
 }
