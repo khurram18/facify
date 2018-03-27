@@ -39,7 +39,7 @@ override func viewDidLoad() {
             faceRect.size.height *= viewSize.height
         
             layer.frame = faceRect
-            layer.borderColor = UIColor.green.cgColor
+            layer.borderColor = UIColor.appTheme.cgColor
             layer.borderWidth = 3.0
             self.view.layer.addSublayer(layer)
             self.facesLayers.append(layer)

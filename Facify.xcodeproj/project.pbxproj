@@ -17,6 +17,7 @@
 		2041327420614AAC00E0B6E8 /* FacifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2041327320614AAC00E0B6E8 /* FacifyUITests.swift */; };
 		208B3FAC206288DE00D274D8 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208B3FAB206288DE00D274D8 /* CameraView.swift */; };
 		208B3FB120628F8600D274D8 /* CVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 208B3FB020628F8600D274D8 /* CVWrapper.mm */; };
+		20C37C06206AA4A900DC113B /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C37C05206AA4A900DC113B /* UIColor+Theme.swift */; };
 		2B0FB2F074FE2984F3BEF96F /* Pods_FacifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9920C3E383028FF3E6F54A9 /* Pods_FacifyTests.framework */; };
 		8748BEF99ED2B6A7C6E59D72 /* Pods_FacifyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA06FFAB2FCAF825E790EFE /* Pods_FacifyUITests.framework */; };
 		B82120C3ADF08F2644981E23 /* Pods_Facify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A8540C112BBD7C50A327E /* Pods_Facify.framework */; };
@@ -59,6 +60,7 @@
 		208B3FAE20628F8500D274D8 /* Facify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Facify-Bridging-Header.h"; sourceTree = "<group>"; };
 		208B3FAF20628F8600D274D8 /* CVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CVWrapper.h; sourceTree = "<group>"; };
 		208B3FB020628F8600D274D8 /* CVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CVWrapper.mm; sourceTree = "<group>"; };
+		20C37C05206AA4A900DC113B /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		36064C2F7D1CE1EEF180CF9A /* Pods-FacifyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacifyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FacifyUITests/Pods-FacifyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C48DD74D35864730D3E1911 /* Pods-FacifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacifyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FacifyTests/Pods-FacifyTests.release.xcconfig"; sourceTree = "<group>"; };
 		66F59D39BB52A336CB969DE9 /* Pods-FacifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacifyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FacifyTests/Pods-FacifyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		2041325220614AAB00E0B6E8 /* Facify */ = {
 			isa = PBXGroup;
 			children = (
+				20C37C04206AA47500DC113B /* Extensions */,
 				208B3FAD20628F5E00D274D8 /* Detection */,
 				208B3FAA206288CB00D274D8 /* view */,
 				2041325320614AAC00E0B6E8 /* AppDelegate.swift */,
@@ -169,6 +172,14 @@
 				208B3FAE20628F8500D274D8 /* Facify-Bridging-Header.h */,
 			);
 			path = Detection;
+			sourceTree = "<group>";
+		};
+		20C37C04206AA47500DC113B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				20C37C05206AA4A900DC113B /* UIColor+Theme.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		52768B4F7F2B346C0F431EF9 /* Frameworks */ = {
@@ -477,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20C37C06206AA4A900DC113B /* UIColor+Theme.swift in Sources */,
 				208B3FB120628F8600D274D8 /* CVWrapper.mm in Sources */,
 				2041325620614AAC00E0B6E8 /* ViewController.swift in Sources */,
 				2041325420614AAC00E0B6E8 /* AppDelegate.swift in Sources */,
