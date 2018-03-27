@@ -10,7 +10,8 @@
 #import <AVFoundation/AVFoundation.h>
 #import <Foundation/Foundation.h>
 
-typedef void(^DetectionResult)(NSArray<NSValue*>*);
+typedef void(^DetectionResult)(NSArray<NSValue*>*, CGSize imageSize);
 @interface CVWrapper : NSObject
-- (void)detect:(CVImageBufferRef)buffer;
+@property DetectionResult completionBlock;
+- (void)detectFaces:(CVImageBufferRef)buffer;
 @end

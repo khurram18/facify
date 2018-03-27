@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2036F701206923B000CCCCFB /* haarcascade_frontalcatface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2036F700206923B000CCCCFB /* haarcascade_frontalcatface.xml */; };
+		203B8702206A12CF00897EEA /* haarcascade_frontalface_alt_tree.xml in Resources */ = {isa = PBXBuildFile; fileRef = 203B86FD206A12CF00897EEA /* haarcascade_frontalface_alt_tree.xml */; };
 		2041325420614AAC00E0B6E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2041325320614AAC00E0B6E8 /* AppDelegate.swift */; };
 		2041325620614AAC00E0B6E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2041325520614AAC00E0B6E8 /* ViewController.swift */; };
 		2041325920614AAC00E0B6E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2041325720614AAC00E0B6E8 /* Main.storyboard */; };
@@ -41,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		15DC1878DA7425492009731C /* Pods-Facify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Facify/Pods-Facify.release.xcconfig"; sourceTree = "<group>"; };
-		2036F700206923B000CCCCFB /* haarcascade_frontalcatface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalcatface.xml; sourceTree = "<group>"; };
+		203B86FD206A12CF00897EEA /* haarcascade_frontalface_alt_tree.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt_tree.xml; sourceTree = "<group>"; };
 		2041325020614AAB00E0B6E8 /* Facify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2041325320614AAC00E0B6E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2041325520614AAC00E0B6E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 		208B3FAD20628F5E00D274D8 /* Detection */ = {
 			isa = PBXGroup;
 			children = (
-				2036F700206923B000CCCCFB /* haarcascade_frontalcatface.xml */,
+				203B86FD206A12CF00897EEA /* haarcascade_frontalface_alt_tree.xml */,
 				208B3FAF20628F8600D274D8 /* CVWrapper.h */,
 				208B3FB020628F8600D274D8 /* CVWrapper.mm */,
 				208B3FAE20628F8500D274D8 /* Facify-Bridging-Header.h */,
@@ -272,7 +272,7 @@
 					2041324F20614AAB00E0B6E8 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					2041326320614AAC00E0B6E8 = {
 						CreatedOnToolsVersion = 9.2;
@@ -311,8 +311,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				203B8702206A12CF00897EEA /* haarcascade_frontalface_alt_tree.xml in Resources */,
 				2041325E20614AAC00E0B6E8 /* LaunchScreen.storyboard in Resources */,
-				2036F701206923B000CCCCFB /* haarcascade_frontalcatface.xml in Resources */,
 				2041325B20614AAC00E0B6E8 /* Assets.xcassets in Resources */,
 				2041325920614AAC00E0B6E8 /* Main.storyboard in Resources */,
 			);
@@ -648,7 +648,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Facify/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -668,7 +669,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Facify/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

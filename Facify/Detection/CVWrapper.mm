@@ -18,14 +18,15 @@
 - (instancetype)init {
     if (self = [super init]) {
         _dispatch_queue = dispatch_queue_create("com.bitsparlour.Facify.detectionQueue", DISPATCH_QUEUE_SERIAL);
-        NSString* path = [[NSBundle mainBundle] pathForResource:@"haarcascade_frontalcatface" ofType:@"xml"];
+        NSString* name = @"haarcascade_frontalface_alt_tree";
+        NSString* path = [[NSBundle mainBundle] pathForResource:name ofType:@"xml"];
         if (!_classifier.load(path.UTF8String)) {
             NSLog(@"Error loading cascade");
         }
     }
     return self;
 }
-- (void)detect:(CVImageBufferRef)pixelBuffer; {
+- (void)detectFaces:(CVImageBufferRef)pixelBuffer; {
 
     CIImage* ciImage = [[CIImage alloc] initWithCVPixelBuffer:pixelBuffer];
     CGAffineTransform transform = [ciImage imageTransformForCGOrientation:kCGImagePropertyOrientationRight];
@@ -34,33 +35,23 @@
     CGImageRef imageRef = [context createCGImage:ciImage fromRect:ciImage.extent];
     UIImage* image = [UIImage imageWithCGImage:imageRef];
     cv::Mat mat = [self cvMatFromUIImage:image];
-//    var ciImage = CIImage(cvPixelBuffer: pixelBuffer)
-//    let transform = ciImage.orientationTransform(for: CGImagePropertyOrientation(rawValue: 6)!)
-//    ciImage = ciImage.transformed(by: transform)
-    
-//    CVPixelBufferLockBaseAddress( pixelBuffer, 0 );
-//    //Processing here
-//    int bufferWidth = CVPixelBufferGetWidth(pixelBuffer);
-//    int bufferHeight = CVPixelBufferGetHeight(pixelBuffer);
-//    unsigned char *pixel = (unsigned char *)CVPixelBufferGetBaseAddress(pixelBuffer);
-//
-//    // put buffer in open cv, no memory copied
-//    cv::Mat mat = cv::Mat(bufferHeight,bufferWidth,CV_8UC4,pixel,CVPixelBufferGetBytesPerRow(pixelBuffer));
-    
-    //End processing
-//    CVPixelBufferUnlockBaseAddress( pixelBuffer, 0 );
     
     cv::Mat gray;
     cv::cvtColor(mat, gray, cv::COLOR_BGR2GRAY);
     
     std::vector<cv::Rect> faces;
     _classifier.detectMultiScale(gray, faces);
+    NSMutableArray<NSValue*>* array = [[NSMutableArray alloc] initWithCapacity:faces.size()];
     for (cv::Rect rect : faces) {
-        cv::Point center( rect.x + rect.width/2, rect.y + rect.height/2 );
-        ellipse( mat, center, cv::Size( rect.width/2, rect.height/2), 0, 0, 360, cv::Scalar( 255, 0, 255 ), 4, 8, 0 );
+        cv::rectangle(mat, rect, cv::Scalar( 255, 0, 255 ));
+        [array addObject:[NSValue valueWithCGRect:CGRectMake(rect.x, rect.y, rect.width, rect.height)]];
     }
-    UIImage* i = [self UIImageFromCVMat:mat];
-    CGSize s = i.size;
+    if (_completionBlock) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            _completionBlock(array, image.size);
+        });
+    }
+    CGImageRelease(imageRef);
 }
 - (cv::Mat)cvMatFromUIImage:(UIImage *)image
 {
