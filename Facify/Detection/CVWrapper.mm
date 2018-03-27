@@ -40,11 +40,18 @@
     cv::cvtColor(mat, gray, cv::COLOR_BGR2GRAY);
     
     std::vector<cv::Rect> faces;
-    _classifier.detectMultiScale(gray, faces);
+    std::vector<int> levels;
+    std::vector<double> weights;
+    _classifier.detectMultiScale(gray, faces, levels, weights, 1.1, 3, 0, cv::Size(), cv::Size(), true);
     NSMutableArray<NSValue*>* array = [[NSMutableArray alloc] initWithCapacity:faces.size()];
-    for (cv::Rect rect : faces) {
-        cv::rectangle(mat, rect, cv::Scalar( 255, 0, 255 ));
-        [array addObject:[NSValue valueWithCGRect:CGRectMake(rect.x, rect.y, rect.width, rect.height)]];
+    const size_t size = faces.size();
+    for (int i = 0; i < size; ++i) {
+        // If confidence is greater than 2.0
+        if (weights[i] > 2.0) {
+            cv::Rect rect = faces[i];
+            cv::rectangle(mat, rect, cv::Scalar( 255, 0, 255 ));
+            [array addObject:[NSValue valueWithCGRect:CGRectMake(rect.x, rect.y, rect.width, rect.height)]];
+        }
     }
     if (_completionBlock) {
         dispatch_async(dispatch_get_main_queue(), ^{
