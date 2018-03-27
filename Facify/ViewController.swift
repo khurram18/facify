@@ -16,6 +16,35 @@ override func viewDidLoad() {
     if isCameraAuthorized() {
         configureCamera()
     }
+    cv.completionBlock = { result, imageSize in
+        for face in self.facesLayers {
+            face.removeFromSuperlayer()
+        }
+        self.facesLayers.removeAll()
+        guard let newFaces = result else {
+            return
+        }
+        let viewSize = self.view.frame.size
+        for value in newFaces {
+            let layer = CALayer()
+            var faceRect = value.cgRectValue
+            faceRect.origin.x /= imageSize.width
+            faceRect.origin.y /= imageSize.height
+            faceRect.size.width /= imageSize.width
+            faceRect.size.height /= imageSize.height
+            
+            faceRect.origin.x *= viewSize.width
+            faceRect.size.width *= viewSize.width
+            faceRect.origin.y *= viewSize.height
+            faceRect.size.height *= viewSize.height
+        
+            layer.frame = faceRect
+            layer.borderColor = UIColor.green.cgColor
+            layer.borderWidth = 3.0
+            self.view.layer.addSublayer(layer)
+            self.facesLayers.append(layer)
+        }
+    }
 }
 
 override func didReceiveMemoryWarning() {
@@ -25,7 +54,9 @@ override func didReceiveMemoryWarning() {
 private var cameraView: CameraView {
     return view as! CameraView
 }
+private var facesLayers = [CALayer]()
 private let session = AVCaptureSession()
+private let cv = CVWrapper()
 }
 // MARK: - Authorization
 extension ViewController {
@@ -53,15 +84,12 @@ extension ViewController {
 private func configureCamera() {
     cameraView.session = session
     let cameraDevices = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: AVMediaType.video, position: .back)
-    var cameraDevice: AVCaptureDevice?
-    for device in cameraDevices.devices {
-        if device.position == .back {
-            cameraDevice = device
-            break
-        }
+    if cameraDevices.devices.isEmpty {
+        return
     }
+    let cameraDevice: AVCaptureDevice = cameraDevices.devices.first!
     do {
-        let captureDeviceInput = try AVCaptureDeviceInput(device: cameraDevice!)
+        let captureDeviceInput = try AVCaptureDeviceInput(device: cameraDevice)
         if session.canAddInput(captureDeviceInput) {
             session.addInput(captureDeviceInput)
         }
@@ -70,7 +98,7 @@ private func configureCamera() {
         print("Error occured \(error)")
         return
     }
-    session.sessionPreset = .high
+    session.sessionPreset = .medium
     let videoDataOutput = AVCaptureVideoDataOutput()
     videoDataOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "Buffer Queue", qos: .userInteractive, attributes: .concurrent, autoreleaseFrequency: .inherit, target: nil))
     if session.canAddOutput(videoDataOutput) {
@@ -86,5 +114,6 @@ func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBu
     guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
         return
     }
+    cv.detectFaces(pixelBuffer)
 }
 }
