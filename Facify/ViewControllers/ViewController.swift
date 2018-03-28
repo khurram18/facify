@@ -7,9 +7,18 @@
 //
 import AVFoundation
 import UIKit
+import SafariServices
 
 class ViewController: UIViewController {
 
+override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    session.startRunning()
+}
+override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    session.stopRunning()
+}
 override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
@@ -105,7 +114,6 @@ private func configureCamera() {
         session.addOutput(videoDataOutput)
     }
     cameraView.videoPreviewLayer.videoGravity = .resize
-    session.startRunning()
 }
 }
 // MARK: - Camera Delegate
