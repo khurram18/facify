@@ -36,23 +36,17 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Info View Controller-->
+        <!--Acknowledgements-->
         <scene sceneID="TBi-MC-mN1">
             <objects>
-                <viewController id="vl2-BO-Yhs" customClass="InfoViewController" customModule="Facify" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Acknowledgements" id="vl2-BO-Yhs" customClass="InfoViewController" customModule="Facify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KhQ-a7-OyR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAK-wc-Blz">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="done" id="XA4-1V-TFw">
-                                        <connections>
-                                            <action selector="onDoneTap:" destination="vl2-BO-Yhs" id="beQ-aJ-0CZ"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
+                                <items/>
                             </toolbar>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Eq-YO-ZRu">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
@@ -62,26 +56,37 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHT-7y-M9c">
+                                <rect key="frame" x="16" y="647" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="kHT-7y-M9c" firstAttribute="leading" secondItem="WTh-aa-rHn" secondAttribute="leading" constant="16" id="7tt-R5-Sbt"/>
                             <constraint firstItem="0Eq-YO-ZRu" firstAttribute="top" secondItem="DAK-wc-Blz" secondAttribute="bottom" id="9q0-Oc-3di"/>
                             <constraint firstItem="WTh-aa-rHn" firstAttribute="trailing" secondItem="DAK-wc-Blz" secondAttribute="trailing" id="Aha-6a-Wje"/>
+                            <constraint firstItem="WTh-aa-rHn" firstAttribute="trailing" secondItem="kHT-7y-M9c" secondAttribute="trailing" constant="24" id="Cp7-Vy-LZT"/>
                             <constraint firstItem="DAK-wc-Blz" firstAttribute="top" secondItem="WTh-aa-rHn" secondAttribute="top" id="LyL-6E-jlQ"/>
                             <constraint firstItem="0Eq-YO-ZRu" firstAttribute="leading" secondItem="WTh-aa-rHn" secondAttribute="leading" id="gye-GK-KbE"/>
                             <constraint firstItem="WTh-aa-rHn" firstAttribute="trailing" secondItem="0Eq-YO-ZRu" secondAttribute="trailing" id="jTk-MX-bTw"/>
                             <constraint firstItem="WTh-aa-rHn" firstAttribute="bottom" secondItem="0Eq-YO-ZRu" secondAttribute="bottom" id="l4E-Ak-ryp"/>
+                            <constraint firstItem="WTh-aa-rHn" firstAttribute="bottom" secondItem="kHT-7y-M9c" secondAttribute="bottom" constant="20" id="wLp-Pe-AlJ"/>
                             <constraint firstItem="DAK-wc-Blz" firstAttribute="leading" secondItem="WTh-aa-rHn" secondAttribute="leading" id="wlE-Q9-pj7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WTh-aa-rHn"/>
                     </view>
                     <connections>
+                        <outlet property="appDescriptionLabel" destination="kHT-7y-M9c" id="o61-Q9-tg9"/>
+                        <outlet property="toolbar" destination="DAK-wc-Blz" id="zAo-zH-4Hv"/>
                         <outlet property="webView" destination="0Eq-YO-ZRu" id="ZaS-Dr-Ap4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Gj-i2-tu3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="831.20000000000005" y="98.50074962518741"/>
+            <point key="canvasLocation" x="1461.5999999999999" y="76.911544227886068"/>
         </scene>
     </scenes>
 </document>
